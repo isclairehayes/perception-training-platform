@@ -225,7 +225,7 @@ export default function BayesianTrainingPage() {
                   {[1, 2, 3, 4, 5].map(level => (
                     <Button
                       key={level}
-                      variant='primary' : 'outline'}
+                      variant={currentLevel === level ? 'primary' : 'outline'}
                       onClick={() => {
                         setCurrentLevel(level);
                         setShowExercise(false);
