@@ -1,0 +1,926 @@
+{
+  "scenarios": [
+    {
+      "id": "bay_001",
+      "level": 1,
+      "type": "probability_update",
+      "scenario": "Un test médico para una enfermedad rara que afecta al 1% de la población tiene 95% de precisión (detecta correctamente el 95% de los casos positivos y da 95% de negativos correctos). Tu test sale positivo.",
+      "initial_question": "¿Cuál es la probabilidad de que realmente tengas la enfermedad?",
+      "base_rate": 0.01,
+      "true_positive_rate": 0.95,
+      "false_positive_rate": 0.05,
+      "correct_probability": 0.161,
+      "updates": [],
+      "explanation": "Usando el teorema de Bayes: P(Enfermo|Positivo) = (0.95 × 0.01) / ((0.95 × 0.01) + (0.05 × 0.99)) ≈ 16.1%. Aunque el test es preciso, la baja tasa base hace que la mayoría de positivos sean falsos positivos.",
+      "bias_tags": ["base_rate_neglect"],
+      "difficulty": "easy",
+      "topic": "medical_testing"
+    },
+    {
+      "id": "bay_002",
+      "level": 2,
+      "type": "probability_update",
+      "scenario": "Estás investigando si un empleado está filtrando información. La probabilidad inicial de que alguien filtre es del 5%. Descubres que el empleado accedió a archivos sensibles fuera de horario laboral (algo que hace el 80% de los filtradores pero solo el 10% de los empleados honestos).",
+      "initial_question": "¿Cuál es tu probabilidad inicial de que esté filtrando?",
+      "correct_initial": 0.05,
+      "updates": [
+        {
+          "new_evidence": "Accedió a archivos sensibles fuera de horario laboral",
+          "likelihood_if_guilty": 0.8,
+          "likelihood_if_innocent": 0.1,
+          "correct_updated_probability": 0.296
+        }
+      ],
+      "explanation": "P(Filtrador|Acceso) = (0.8 × 0.05) / ((0.8 × 0.05) + (0.1 × 0.95)) ≈ 29.6%",
+      "bias_tags": ["base_rate_neglect"],
+      "difficulty": "medium",
+      "topic": "investigation"
+    },
+    {
+      "id": "bay_003",
+      "level": 1,
+      "type": "calibration",
+      "scenario": "Vas a una cita a ciegas. Tu amigo dice que tu pareja es 'muy compatible contigo'.",
+      "initial_question": "¿Cuál es la probabilidad de que la relación funcione a largo plazo (>2 años)?",
+      "correct_probability": 0.15,
+      "actual_outcome": false,
+      "explanation": "Las relaciones a largo plazo exitosas son raras (~15% según estudios). El sesgo de optimismo nos hace sobrestimar.",
+      "bias_tags": ["optimism_bias"],
+      "difficulty": "easy",
+      "topic": "relationships"
+    },
+    {
+      "id": "bay_004",
+      "level": 3,
+      "type": "probability_update",
+      "scenario": "Una startup está desarrollando un nuevo producto. La tasa base de éxito de startups en este sector es del 10%.",
+      "initial_question": "¿Cuál es tu probabilidad inicial de éxito?",
+      "correct_initial": 0.1,
+      "updates": [
+        {
+          "new_evidence": "Consiguen financiación de un inversor prestigioso (el 60% de las exitosas lo logran vs 20% de las que fallan)",
+          "likelihood_if_success": 0.6,
+          "likelihood_if_failure": 0.2,
+          "correct_updated_probability": 0.25
+        },
+        {
+          "new_evidence": "Su MVP tiene 1000 usuarios activos en el primer mes (el 70% de las exitosas logran esto vs 30% de las fallidas)",
+          "likelihood_if_success": 0.7,
+          "likelihood_if_failure": 0.3,
+          "correct_updated_probability": 0.437
+        }
+      ],
+      "explanation": "Actualización bayesiana iterativa con múltiples evidencias.",
+      "bias_tags": ["base_rate_neglect", "anchoring"],
+      "difficulty": "medium",
+      "topic": "business"
+    },
+    {
+      "id": "bay_005",
+      "level": 1,
+      "type": "bias_detection",
+      "scenario": "Lees una noticia sobre un accidente de avión. Después, ¿cuál crees que es la probabilidad de morir en un accidente de avión en tu próximo vuelo?",
+      "initial_question": "Estima la probabilidad",
+      "correct_probability": 0.00001,
+      "typical_biased_answer": 0.01,
+      "bias_name": "Sesgo de Disponibilidad",
+      "bias_explanation": "Las noticias recientes hacen que sobreestimemos la probabilidad de eventos raros pero memorables. La probabilidad real es ~1 en 11 millones.",
+      "difficulty": "easy",
+      "topic": "risk_perception"
+    },
+    {
+      "id": "bay_006",
+      "level": 2,
+      "type": "probability_update",
+      "scenario": "En una baraja de 52 cartas, sacas 3 cartas al azar. Las tres son corazones.",
+      "initial_question": "¿Cuál es la probabilidad de que la siguiente carta también sea corazones?",
+      "correct_probability": 0.204,
+      "explanation": "Quedan 10 corazones de 49 cartas = 10/49 ≈ 20.4%. Las cartas previas reducen tanto numerador como denominador.",
+      "bias_tags": ["gamblers_fallacy"],
+      "difficulty": "medium",
+      "topic": "probability_basics"
+    },
+    {
+      "id": "bay_007",
+      "level": 4,
+      "type": "bias_detection",
+      "scenario": "Has invertido $10,000 en criptomonedas y has perdido $8,000. Te ofrecen vender ahora o esperar. Crees que 'debe' subir pronto porque 'ya ha caído mucho'.",
+      "initial_question": "¿Cuál es la probabilidad de que suba un 20% en el próximo mes?",
+      "correct_probability": 0.3,
+      "typical_biased_answer": 0.6,
+      "bias_name": "Falacia del Costo Hundido + Falacia del Apostador",
+      "bias_explanation": "El dinero perdido es irrelevante para la decisión futura. Las pérdidas pasadas no predicen ganancias futuras.",
+      "difficulty": "hard",
+      "topic": "finance"
+    },
+    {
+      "id": "bay_008",
+      "level": 2,
+      "type": "calibration",
+      "scenario": "Tu empresa lanza un nuevo producto. El equipo de marketing es muy optimista.",
+      "initial_question": "¿Probabilidad de superar el objetivo de ventas del primer trimestre?",
+      "correct_probability": 0.35,
+      "actual_outcome": false,
+      "explanation": "Los equipos internos típicamente sobreestiman el éxito por sesgo de confirmación y optimismo.",
+      "bias_tags": ["confirmation_bias", "optimism_bias"],
+      "difficulty": "medium",
+      "topic": "business"
+    },
+    {
+      "id": "bay_009",
+      "level": 3,
+      "type": "probability_update",
+      "scenario": "Investigas si un candidato presidencial ganará. Las encuestas iniciales le dan 45% de intención de voto.",
+      "initial_question": "¿Cuál es tu probabilidad inicial de que gane?",
+      "correct_initial": 0.45,
+      "updates": [
+        {
+          "new_evidence": "Una encuesta de alta calidad muestra 48% de intención (margen de error ±3%)",
+          "correct_updated_probability": 0.52
+        },
+        {
+          "new_evidence": "Un escándalo reduce su apoyo al 42% en las encuestas",
+          "correct_updated_probability": 0.35
+        }
+      ],
+      "explanation": "Las encuestas son evidencia probabilística, no certezas. Actualiza gradualmente.",
+      "bias_tags": ["overconfidence"],
+      "difficulty": "medium",
+      "topic": "politics"
+    },
+    {
+      "id": "bay_010",
+      "level": 1,
+      "type": "bias_detection",
+      "scenario": "Linda tiene 31 años, es soltera, franca y muy brillante. Se especializó en filosofía. Como estudiante, estaba profundamente preocupada por temas de discriminación y justicia social.",
+      "initial_question": "¿Qué es más probable? (A) Linda es cajera de banco (B) Linda es cajera de banco Y activista feminista",
+      "correct_answer": "A",
+      "correct_probability": 1.0,
+      "bias_name": "Falacia de la Conjunción",
+      "bias_explanation": "A ∩ B nunca puede ser más probable que A solo. P(A y B) ≤ P(A). Famoso experimento de Kahneman & Tversky.",
+      "difficulty": "easy",
+      "topic": "logic"
+    },
+    {
+      "id": "bay_011",
+      "level": 5,
+      "type": "probability_update",
+      "scenario": "Estás prediciendo si habrá una recesión en los próximos 12 meses. La tasa base histórica es del 15% en períodos similares.",
+      "initial_question": "¿Cuál es tu probabilidad inicial?",
+      "correct_initial": 0.15,
+      "updates": [
+        {
+          "new_evidence": "La curva de rendimientos se invierte (sucede en el 70% de las recesiones vs 30% sin recesión)",
+          "likelihood_if_recession": 0.7,
+          "likelihood_if_no_recession": 0.3,
+          "correct_updated_probability": 0.292
+        },
+        {
+          "new_evidence": "El desempleo sube 0.5% en un mes (ocurre en 80% de recesiones vs 20% sin recesión)",
+          "likelihood_if_recession": 0.8,
+          "likelihood_if_no_recession": 0.2,
+          "correct_updated_probability": 0.622
+        },
+        {
+          "new_evidence": "La Fed baja tasas de emergencia (ocurre en 90% de recesiones vs 10% sin recesión)",
+          "likelihood_if_recession": 0.9,
+          "likelihood_if_no_recession": 0.1,
+          "correct_updated_probability": 0.936
+        }
+      ],
+      "explanation": "Múltiples señales económicas acumulan evidencia. Cada actualización usa la probabilidad anterior como nuevo prior.",
+      "bias_tags": ["base_rate_neglect", "recency_bias"],
+      "difficulty": "very_hard",
+      "topic": "economics"
+    },
+    {
+      "id": "bay_012",
+      "level": 2,
+      "type": "calibration",
+      "scenario": "Estás 70% seguro de que tu equipo ganará el próximo partido.",
+      "initial_question": "Asigna tu nivel de confianza (0-100%)",
+      "correct_probability": 0.55,
+      "actual_outcome": false,
+      "explanation": "La gente sobreestima su confianza. Si dices 70%, debería suceder ~70% de las veces. Calibración es clave.",
+      "bias_tags": ["overconfidence"],
+      "difficulty": "medium",
+      "topic": "calibration_training"
+    },
+    {
+      "id": "bay_013",
+      "level": 3,
+      "type": "bias_detection",
+      "scenario": "Has tenido 3 accidentes de tráfico en los últimos 5 años. Un amigo no ha tenido ninguno en 20 años. Ambos conducen igual.",
+      "initial_question": "¿Quién tiene más probabilidad de tener un accidente en el próximo año?",
+      "correct_answer": "Probabilidad similar",
+      "correct_probability": 0.5,
+      "bias_name": "Regresión a la Media",
+      "bias_explanation": "Los eventos extremos (mala suerte) tienden a volver al promedio. Tu historial no predice el futuro si la causa es aleatoria.",
+      "difficulty": "medium",
+      "topic": "statistics"
+    },
+    {
+      "id": "bay_014",
+      "level": 4,
+      "type": "probability_update",
+      "scenario": "Un detector de mentiras afirma 90% de precisión. Lo usas en un sospechoso. La tasa base de culpables en casos similares es 20%.",
+      "initial_question": "¿Cuál es la probabilidad de que sea culpable si el detector dice que miente?",
+      "base_rate": 0.2,
+      "true_positive_rate": 0.9,
+      "false_positive_rate": 0.1,
+      "correct_probability": 0.692,
+      "explanation": "P(Culpable|Miente en detector) = (0.9 × 0.2) / ((0.9 × 0.2) + (0.1 × 0.8)) ≈ 69.2%",
+      "bias_tags": ["base_rate_neglect"],
+      "difficulty": "hard",
+      "topic": "forensics"
+    },
+    {
+      "id": "bay_015",
+      "level": 1,
+      "type": "bias_detection",
+      "scenario": "Lanzas una moneda justa 10 veces y sale cara todas las veces.",
+      "initial_question": "¿Cuál es la probabilidad de que salga cara en el lanzamiento 11?",
+      "correct_probability": 0.5,
+      "typical_biased_answer": 0.3,
+      "bias_name": "Falacia del Apostador",
+      "bias_explanation": "Cada lanzamiento es independiente. La moneda no tiene memoria. P(Cara) = 50% siempre.",
+      "difficulty": "easy",
+      "topic": "probability_basics"
+    },
+    {
+      "id": "bay_016",
+      "level": 2,
+      "type": "calibration",
+      "scenario": "Estás 90% seguro de que tu proyecto se completará a tiempo.",
+      "initial_question": "Asigna tu nivel de confianza",
+      "correct_probability": 0.6,
+      "actual_outcome": false,
+      "explanation": "Los proyectos casi siempre se retrasan (Ley de Hofstadter). 90% de confianza es sobreestimación típica.",
+      "bias_tags": ["planning_fallacy", "overconfidence"],
+      "difficulty": "medium",
+      "topic": "project_management"
+    },
+    {
+      "id": "bay_017",
+      "level": 3,
+      "type": "probability_update",
+      "scenario": "Evaluando si un empleado renunciará pronto. Tasa base: 15% anual en tu empresa.",
+      "initial_question": "¿Probabilidad inicial de renuncia en próximos 6 meses?",
+      "correct_initial": 0.075,
+      "updates": [
+        {
+          "new_evidence": "Actualiza su LinkedIn y añade 'Open to opportunities' (70% de los que renuncian hacen esto vs 30% de los que se quedan)",
+          "likelihood_if_leaving": 0.7,
+          "likelihood_if_staying": 0.3,
+          "correct_updated_probability": 0.154
+        }
+      ],
+      "explanation": "Señales en redes sociales son indicadores válidos pero no determinantes.",
+      "bias_tags": ["confirmation_bias"],
+      "difficulty": "medium",
+      "topic": "hr"
+    },
+    {
+      "id": "bay_018",
+      "level": 4,
+      "type": "bias_detection",
+      "scenario": "Invertiste en una acción porque un analista la recomendó. Ha bajado 30%. Ignoras noticias negativas y buscas cualquier señal positiva.",
+      "initial_question": "¿Probabilidad de que suba 50% en 6 meses?",
+      "correct_probability": 0.15,
+      "typical_biased_answer": 0.5,
+      "bias_name": "Sesgo de Confirmación",
+      "bias_explanation": "Buscas evidencia que confirme tu inversión e ignoras evidencia contraria. Reevalúa objetivamente.",
+      "difficulty": "hard",
+      "topic": "finance"
+    },
+    {
+      "id": "bay_019",
+      "level": 5,
+      "type": "probability_update",
+      "scenario": "Prediciendo si una tecnología (ej: coches autónomos nivel 5) estará ampliamente disponible en 5 años. Tasa base de tecnologías transformadoras: 10% logran adopción en timeline prometido.",
+      "initial_question": "Probabilidad inicial",
+      "correct_initial": 0.1,
+      "updates": [
+        {
+          "new_evidence": "Una empresa líder completa 1M de millas sin intervención humana (60% de tecnologías exitosas logran este hito vs 20% de fallidas)",
+          "likelihood_if_success": 0.6,
+          "likelihood_if_failure": 0.2,
+          "correct_updated_probability": 0.25
+        },
+        {
+          "new_evidence": "Los reguladores aprueban marco legal en 3 países principales (70% de exitosas vs 30% de fallidas)",
+          "likelihood_if_success": 0.7,
+          "likelihood_if_failure": 0.3,
+          "correct_updated_probability": 0.437
+        },
+        {
+          "new_evidence": "Un accidente fatal viral genera pánico público (30% de exitosas enfrentan esto vs 70% de fallidas)",
+          "likelihood_if_success": 0.3,
+          "likelihood_if_failure": 0.7,
+          "correct_updated_probability": 0.22
+        }
+      ],
+      "explanation": "Tecnologías enfrentan múltiples obstáculos: técnicos, regulatorios, sociales. Actualiza con cada señal.",
+      "bias_tags": ["optimism_bias", "availability_heuristic"],
+      "difficulty": "very_hard",
+      "topic": "technology"
+    },
+    {
+      "id": "bay_020",
+      "level": 1,
+      "type": "calibration",
+      "scenario": "¿Cuál es la capital de Mongolia?",
+      "initial_question": "¿Qué tan seguro estás de tu respuesta? (0-100%)",
+      "correct_answer": "Ulán Bator",
+      "explanation": "Calibración básica: si dices 80% seguro, deberías acertar ~80% de preguntas similares.",
+      "bias_tags": ["overconfidence"],
+      "difficulty": "easy",
+      "topic": "knowledge_calibration"
+    },
+    {
+      "id": "bay_021",
+      "level": 2,
+      "type": "bias_detection",
+      "scenario": "Compraste una acción a $100. Ahora vale $80. Un experto dice 'vende', pero piensas 'si la vendo, pierdo $20'.",
+      "initial_question": "¿Deberías mantener o vender? ¿Cuál es tu razonamiento?",
+      "correct_answer": "Vender si fundamentals cambiaron",
+      "bias_name": "Aversión a la Pérdida + Costo Hundido",
+      "bias_explanation": "Los $20 perdidos son irrelevantes. La decisión debe basarse en expectativa futura, no en pérdida pasada.",
+      "difficulty": "medium",
+      "topic": "behavioral_economics"
+    },
+    {
+      "id": "bay_022",
+      "level": 3,
+      "type": "probability_update",
+      "scenario": "Investigando fraude financiero. Tasa base de fraude en empresas similares: 5%.",
+      "initial_question": "Probabilidad inicial de fraude",
+      "correct_initial": 0.05,
+      "updates": [
+        {
+          "new_evidence": "Auditor encuentra discrepancias en cuentas (aparece en 80% de fraudes vs 15% sin fraude)",
+          "likelihood_if_fraud": 0.8,
+          "likelihood_if_no_fraud": 0.15,
+          "correct_updated_probability": 0.219
+        },
+        {
+          "new_evidence": "CFO renuncia abruptamente (sucede en 60% de fraudes vs 10% sin fraude)",
+          "likelihood_if_fraud": 0.6,
+          "likelihood_if_no_fraud": 0.1,
+          "correct_updated_probability": 0.627
+        }
+      ],
+      "explanation": "Múltiples señales de alarma aumentan la probabilidad acumulativamente.",
+      "bias_tags": ["base_rate_neglect"],
+      "difficulty": "medium",
+      "topic": "forensics"
+    },
+    {
+      "id": "bay_023",
+      "level": 4,
+      "type": "bias_detection",
+      "scenario": "Tu primer hijo nació en enero. Tu segundo hijo también nació en enero. Estás embarazada del tercero.",
+      "initial_question": "¿Cuál es la probabilidad de que nazca en enero?",
+      "correct_probability": 0.083,
+      "typical_biased_answer": 0.4,
+      "bias_name": "Hot Hand Fallacy / Clustering Illusion",
+      "bias_explanation": "Los humanos ven patrones en aleatoriedad. Probabilidad real ≈ 1/12 ≈ 8.3% (asumiendo fechas independientes).",
+      "difficulty": "hard",
+      "topic": "probability_basics"
+    },
+    {
+      "id": "bay_024",
+      "level": 5,
+      "type": "calibration",
+      "scenario": "Eres forecaster superforecaster entrenado. Debes predecir si X país tendrá elecciones anticipadas en próximos 12 meses.",
+      "initial_question": "Asigna probabilidad precisa (considera clase de referencia, señales específicas, y calibración histórica)",
+      "correct_probability": 0.32,
+      "actual_outcome": true,
+      "explanation": "Superforecasters usan: (1) Tasa base, (2) Señales específicas, (3) Calibración iterativa, (4) Actualización bayesiana continua",
+      "bias_tags": ["overconfidence", "base_rate_neglect"],
+      "difficulty": "very_hard",
+      "topic": "superforecasting"
+    },
+    {
+      "id": "bay_025",
+      "level": 1,
+      "type": "probability_update",
+      "scenario": "Hay 3 puertas. Detrás de una hay un coche, detrás de las otras dos hay cabras. Eliges puerta 1. El presentador (que sabe dónde está el coche) abre puerta 3, mostrando una cabra.",
+      "initial_question": "¿Deberías cambiar a puerta 2 o quedarte con puerta 1?",
+      "correct_answer": "Cambiar",
+      "correct_probability": 0.667,
+      "explanation": "Problema de Monty Hall. Al cambiar, ganas 2/3 veces. El presentador te dio información: puerta 2 tiene 2/3 de probabilidad.",
+      "bias_tags": ["conservatism_bias"],
+      "difficulty": "easy",
+      "topic": "probability_puzzles"
+    },
+    {
+      "id": "bay_026",
+      "level": 3,
+      "type": "bias_detection",
+      "scenario": "Ves que 5 startups de IA han tenido éxito recientemente. Decides invertir en la próxima que veas.",
+      "initial_question": "¿Probabilidad de que tu inversión tenga éxito?",
+      "correct_probability": 0.1,
+      "typical_biased_answer": 0.6,
+      "bias_name": "Sesgo de Disponibilidad + Sesgo de Recencia",
+      "bias_explanation": "Los casos recientes y visibles distorsionan tu percepción. La tasa base de éxito sigue siendo ~10%.",
+      "difficulty": "medium",
+      "topic": "investing"
+    },
+    {
+      "id": "bay_027",
+      "level": 2,
+      "type": "probability_update",
+      "scenario": "Test de embarazo con 99% de precisión. Probabilidad previa de embarazo: 20%.",
+      "initial_question": "Test sale positivo. ¿Probabilidad de estar embarazada?",
+      "base_rate": 0.2,
+      "true_positive_rate": 0.99,
+      "false_positive_rate": 0.01,
+      "correct_probability": 0.961,
+      "explanation": "P(Embarazada|Positivo) = (0.99 × 0.2) / ((0.99 × 0.2) + (0.01 × 0.8)) ≈ 96.1%",
+      "bias_tags": [],
+      "difficulty": "medium",
+      "topic": "medical_testing"
+    },
+    {
+      "id": "bay_028",
+      "level": 4,
+      "type": "calibration",
+      "scenario": "Prediciendo resultado de un juicio complejo. Has revisado evidencia.",
+      "initial_question": "¿Probabilidad de veredicto culpable? (Calibra tu incertidumbre correctamente)",
+      "correct_probability": 0.55,
+      "actual_outcome": true,
+      "explanation": "En casos complejos, evita anclarte en extremos (0-10% o 90-100%). Usa rango central si incertidumbre es alta.",
+      "bias_tags": ["overconfidence", "anchoring"],
+      "difficulty": "hard",
+      "topic": "legal"
+    },
+    {
+      "id": "bay_029",
+      "level": 5,
+      "type": "probability_update",
+      "scenario": "Predicción geopolítica: ¿Habrá conflicto militar entre dos países en próximos 24 meses? Tasa base histórica: 8% en situaciones similares.",
+      "initial_question": "Probabilidad inicial",
+      "correct_initial": 0.08,
+      "updates": [
+        {
+          "new_evidence": "Retórica agresiva de líderes aumenta (presente en 50% de conflictos vs 20% sin conflicto)",
+          "likelihood_if_conflict": 0.5,
+          "likelihood_if_no_conflict": 0.2,
+          "correct_updated_probability": 0.148
+        },
+        {
+          "new_evidence": "Movimientos de tropas a la frontera (70% de conflictos vs 10% sin conflicto)",
+          "likelihood_if_conflict": 0.7,
+          "likelihood_if_no_conflict": 0.1,
+          "correct_updated_probability": 0.535
+        },
+        {
+          "new_evidence": "Mediación internacional exitosa reduce tensiones (20% de conflictos tienen esto vs 60% sin conflicto)",
+          "likelihood_if_conflict": 0.2,
+          "likelihood_if_no_conflict": 0.6,
+          "correct_updated_probability": 0.225
+        }
+      ],
+      "explanation": "Forecasting geopolítico requiere actualización continua con señales mixtas. Evita anclaje en narrativas.",
+      "bias_tags": ["base_rate_neglect", "narrative_fallacy", "recency_bias"],
+      "difficulty": "very_hard",
+      "topic": "geopolitics"
+    },
+    {
+      "id": "bay_030",
+      "level": 1,
+      "type": "bias_detection",
+      "scenario": "Lees: 'Steve es tímido y retraído, siempre útil pero poco interesado en la gente. Alma ordenada y metódica, necesita orden y estructura, pasión por el detalle.'",
+      "initial_question": "¿Es más probable que Steve sea (A) bibliotecario o (B) granjero?",
+      "correct_answer": "B (Granjero)",
+      "explanation": "Hay ~20x más granjeros que bibliotecarios. Aunque el perfil 'parece' bibliotecario, la tasa base importa más.",
+      "bias_name": "Descuido de Tasa Base",
+      "bias_tags": ["base_rate_neglect", "representativeness_heuristic"],
+      "difficulty": "easy",
+      "topic": "stereotypes"
+    },
+    {
+      "id": "bay_031",
+      "level": 3,
+      "type": "probability_update",
+      "scenario": "Diagnosticando falla técnica en sistema complejo. Tasa base de falla tipo A: 30%, tipo B: 50%, tipo C: 20%.",
+      "initial_question": "Sin más información, ¿cuál es la probabilidad de que sea tipo B?",
+      "correct_initial": 0.5,
+      "updates": [
+        {
+          "new_evidence": "Error log muestra patrón X (presente en 70% de tipo B, 20% de tipo A, 30% de tipo C)",
+          "correct_updated_probability": 0.636
+        }
+      ],
+      "explanation": "Usar tasa base como prior, luego actualizar con evidencia específica.",
+      "bias_tags": [],
+      "difficulty": "medium",
+      "topic": "engineering"
+    },
+    {
+      "id": "bay_032",
+      "level": 2,
+      "type": "calibration",
+      "scenario": "¿En qué año fue fundada la ONU?",
+      "initial_question": "Da un rango de 90% de confianza (ej: 1940-1950)",
+      "correct_answer": "1945",
+      "explanation": "La mayoría da rangos demasiado estrechos. Si das 90% de confianza, deberías incluir la respuesta correcta ~90% del tiempo.",
+      "bias_tags": ["overconfidence"],
+      "difficulty": "medium",
+      "topic": "knowledge_calibration"
+    },
+    {
+      "id": "bay_033",
+      "level": 4,
+      "type": "bias_detection",
+      "scenario": "Inviertes $1000 en cripto. En 1 semana vale $500. Un amigo dice 'vende'. Piensas: 'Si vendo ahora, pierdo $500. Si espero, puede que recupere'.",
+      "initial_question": "¿Cuál es la probabilidad de recuperar tu inversión en 6 meses?",
+      "correct_probability": 0.25,
+      "typical_biased_answer": 0.6,
+      "bias_name": "Falacia del Costo Hundido + Aversión a Pérdida",
+      "bias_explanation": "Los $500 perdidos ya no existen. La decisión debe basarse en expectativa futura, no en recuperar lo perdido.",
+      "difficulty": "hard",
+      "topic": "behavioral_finance"
+    },
+    {
+      "id": "bay_034",
+      "level": 5,
+      "type": "probability_update",
+      "scenario": "Evaluando riesgo de pandemia global en próximos 5 años. Tasa base histórica (últimas décadas): 10%.",
+      "initial_question": "Probabilidad inicial",
+      "correct_initial": 0.1,
+      "updates": [
+        {
+          "new_evidence": "Nuevo virus zoonótico detectado en mercados de animales (60% de pandemias empiezan así vs 10% sin pandemia)",
+          "likelihood_if_pandemic": 0.6,
+          "likelihood_if_no_pandemic": 0.1,
+          "correct_updated_probability": 0.4
+        },
+        {
+          "new_evidence": "WHO declara alerta internacional (80% de pandemias tienen esto vs 20% sin pandemia)",
+          "likelihood_if_pandemic": 0.8,
+          "likelihood_if_no_pandemic": 0.2,
+          "correct_updated_probability": 0.727
+        },
+        {
+          "new_evidence": "Transmisión persona-persona confirmada (90% de pandemias vs 5% sin pandemia)",
+          "likelihood_if_pandemic": 0.9,
+          "likelihood_if_no_pandemic": 0.05,
+          "correct_updated_probability": 0.97
+        }
+      ],
+      "explanation": "Forecasting de riesgos globales combina: tasas base, señales tempranas, y actualización rápida ante nueva evidencia.",
+      "bias_tags": ["normalcy_bias", "recency_bias"],
+      "difficulty": "very_hard",
+      "topic": "global_risks"
+    },
+    {
+      "id": "bay_035",
+      "level": 2,
+      "type": "bias_detection",
+      "scenario": "Tu equipo ha ganado 5 partidos seguidos. Apuestas todo tu dinero al próximo partido.",
+      "initial_question": "¿Probabilidad de ganar el próximo?",
+      "correct_probability": 0.55,
+      "typical_biased_answer": 0.85,
+      "bias_name": "Hot Hand Fallacy",
+      "bias_explanation": "Rachas pasadas no predicen resultados futuros si los eventos son independientes o con regresión a la media.",
+      "difficulty": "medium",
+      "topic": "sports_betting"
+    },
+    {
+      "id": "bay_036",
+      "level": 3,
+      "type": "calibration",
+      "scenario": "Estás 95% seguro de que tu startup será rentable en 2 años.",
+      "initial_question": "Calibra tu estimación (considera tasa base de startups)",
+      "correct_probability": 0.25,
+      "actual_outcome": false,
+      "explanation": "Founders son notoriamente sobreoptimistas. Tasa base de rentabilidad a 2 años: ~25%.",
+      "bias_tags": ["optimism_bias", "overconfidence"],
+      "difficulty": "medium",
+      "topic": "entrepreneurship"
+    },
+    {
+      "id": "bay_037",
+      "level": 4,
+      "type": "probability_update",
+      "scenario": "Investigación criminal: sospechoso niega crimen. Tasa base de culpabilidad en casos similares: 40%.",
+      "initial_question": "Probabilidad inicial de culpabilidad",
+      "correct_initial": 0.4,
+      "updates": [
+        {
+          "new_evidence": "Su ADN está en la escena (80% de culpables tienen esto vs 10% de inocentes)",
+          "likelihood_if_guilty": 0.8,
+          "likelihood_if_innocent": 0.1,
+          "correct_updated_probability": 0.842
+        },
+        {
+          "new_evidence": "Tiene coartada verificada por 3 testigos (10% de culpables tienen esto vs 70% de inocentes)",
+          "likelihood_if_guilty": 0.1,
+          "likelihood_if_innocent": 0.7,
+          "correct_updated_probability": 0.286
+        }
+      ],
+      "explanation": "Evidencia contradictoria requiere actualización bayesiana cuidadosa. No ignores la evidencia que contradice tu hipótesis.",
+      "bias_tags": ["confirmation_bias"],
+      "difficulty": "hard",
+      "topic": "forensics"
+    },
+    {
+      "id": "bay_038",
+      "level": 1,
+      "type": "calibration",
+      "scenario": "Mañana va a llover. ¿Qué tan seguro estás?",
+      "initial_question": "Asigna probabilidad (0-100%)",
+      "correct_probability": 0.3,
+      "actual_outcome": false,
+      "explanation": "Calibración meteorológica: si dices 70%, debería llover ~7 de cada 10 veces que das esa predicción.",
+      "bias_tags": [],
+      "difficulty": "easy",
+      "topic": "weather"
+    },
+    {
+      "id": "bay_039",
+      "level": 5,
+      "type": "probability_update",
+      "scenario": "Predicción tecnológica: ¿Logrará IA general (AGI) nivel humano en próximos 10 años? Consenso expertos: 20%.",
+      "initial_question": "Tu probabilidad inicial (considera clase de referencia de predicciones tecnológicas)",
+      "correct_initial": 0.2,
+      "updates": [
+        {
+          "new_evidence": "Breakthrough en arquitectura: modelo pasa Turing test convincentemente (50% de AGI exitosas tienen esto vs 10% sin AGI)",
+          "likelihood_if_agi": 0.5,
+          "likelihood_if_no_agi": 0.1,
+          "correct_updated_probability": 0.556
+        },
+        {
+          "new_evidence": "Costos computacionales siguen ley de potencia prohibitiva (20% de AGI enfrenta esto vs 60% sin AGI)",
+          "likelihood_if_agi": 0.2,
+          "likelihood_if_no_agi": 0.6,
+          "correct_updated_probability": 0.263
+        }
+      ],
+      "explanation": "Tech forecasting combina: tendencias exponenciales, límites físicos/económicos, y sorpresas (cisnes negros).",
+      "bias_tags": ["exponential_growth_bias", "optimism_bias"],
+      "difficulty": "very_hard",
+      "topic": "ai_forecasting"
+    },
+    {
+      "id": "bay_040",
+      "level": 2,
+      "type": "bias_detection",
+      "scenario": "Compraste acciones de Tesla a $300. Ahora valen $200. Elon Musk tuitea algo optimista.",
+      "initial_question": "¿Probabilidad de que suban a $350 en 3 meses?",
+      "correct_probability": 0.2,
+      "typical_biased_answer": 0.6,
+      "bias_name": "Anclaje + Sesgo de Confirmación",
+      "bias_explanation": "Te anclas en el precio de compra ($300) y buscas confirmación (tweet optimista). Evalúa fundamentals objetivamente.",
+      "difficulty": "medium",
+      "topic": "investing"
+    },
+    {
+      "id": "bay_041",
+      "level": 3,
+      "type": "probability_update",
+      "scenario": "Prediciendo si un candidato aceptará tu oferta laboral. Tasa base de aceptación en tu empresa: 60%.",
+      "initial_question": "Probabilidad inicial",
+      "correct_initial": 0.6,
+      "updates": [
+        {
+          "new_evidence": "Tiene otra oferta competitiva (40% de los que aceptan tienen esto vs 80% de los que rechazan)",
+          "likelihood_if_accepts": 0.4,
+          "likelihood_if_rejects": 0.8,
+          "correct_updated_probability": 0.429
+        },
+        {
+          "new_evidence": "Expresó gran entusiasmo en última entrevista (70% de los que aceptan vs 30% de los que rechazan)",
+          "likelihood_if_accepts": 0.7,
+          "likelihood_if_rejects": 0.3,
+          "correct_updated_probability": 0.636
+        }
+      ],
+      "explanation": "Señales mixtas requieren ponderación cuidadosa. No sobrepondera señales recientes.",
+      "bias_tags": ["recency_bias"],
+      "difficulty": "medium",
+      "topic": "recruiting"
+    },
+    {
+      "id": "bay_042",
+      "level": 4,
+      "type": "calibration",
+      "scenario": "Eres analista político. Predice: ¿X partido ganará mayoría en parlamento?",
+      "initial_question": "Asigna probabilidad calibrada (no binaria: 0% o 100%)",
+      "correct_probability": 0.48,
+      "actual_outcome": false,
+      "explanation": "Buenos forecasters evitan extremos (0-5% o 95-100%) salvo con evidencia abrumadora. Usa rango 20-80% para alta incertidumbre.",
+      "bias_tags": ["binary_thinking"],
+      "difficulty": "hard",
+      "topic": "politics"
+    },
+    {
+      "id": "bay_043",
+      "level": 5,
+      "type": "bias_detection",
+      "scenario": "Revisas 20 estudios médicos. 15 muestran que tratamiento X funciona, 5 dicen que no. Te enfocas solo en los 15 positivos.",
+      "initial_question": "¿Probabilidad de que el tratamiento funcione?",
+      "correct_probability": 0.7,
+      "typical_biased_answer": 0.95,
+      "bias_name": "Sesgo de Confirmación + Sesgo de Publicación",
+      "bias_explanation": "No ignores evidencia contraria. 5/20 (25%) son negativos. Además, estudios negativos se publican menos (sesgo de publicación).",
+      "difficulty": "very_hard",
+      "topic": "meta_analysis"
+    },
+    {
+      "id": "bay_044",
+      "level": 1,
+      "type": "probability_update",
+      "scenario": "Test de seguridad detecta malware con 98% de precisión. Tasa base de malware en archivos: 0.1%.",
+      "initial_question": "Tu archivo da positivo. ¿Probabilidad de que sea malware?",
+      "base_rate": 0.001,
+      "true_positive_rate": 0.98,
+      "false_positive_rate": 0.02,
+      "correct_probability": 0.047,
+      "explanation": "P(Malware|Positivo) = (0.98 × 0.001) / ((0.98 × 0.001) + (0.02 × 0.999)) ≈ 4.7%. Tasa base muy baja → mayoría son falsos positivos.",
+      "bias_tags": ["base_rate_neglect"],
+      "difficulty": "easy",
+      "topic": "cybersecurity"
+    },
+    {
+      "id": "bay_045",
+      "level": 3,
+      "type": "bias_detection",
+      "scenario": "Tu amigo recomienda un restaurante: 'Es el mejor de la ciudad'. Llegas y está vacío un viernes por la noche.",
+      "initial_question": "¿Actualizas tu estimación de calidad del restaurante?",
+      "correct_answer": "Sí, reduce probabilidad",
+      "bias_name": "Sesgo de Autoridad + Actualización Bayesiana",
+      "bias_explanation": "Evidencia directa (restaurante vacío) debería actualizar tu creencia pese a recomendación de autoridad.",
+      "difficulty": "medium",
+      "topic": "daily_life"
+    },
+    {
+      "id": "bay_046",
+      "level": 4,
+      "type": "probability_update",
+      "scenario": "Sistema de IA para detectar fraude en transacciones. Tasa base de fraude: 0.5%. IA tiene 95% true positive, 90% true negative.",
+      "initial_question": "¿Probabilidad de fraude si IA dice 'fraude'?",
+      "base_rate": 0.005,
+      "true_positive_rate": 0.95,
+      "false_positive_rate": 0.1,
+      "correct_probability": 0.046,
+      "explanation": "P(Fraude|Alerta) = (0.95 × 0.005) / ((0.95 × 0.005) + (0.1 × 0.995)) ≈ 4.6%. Tasa base muy baja → muchas falsas alarmas.",
+      "bias_tags": ["base_rate_neglect"],
+      "difficulty": "hard",
+      "topic": "machine_learning"
+    },
+    {
+      "id": "bay_047",
+      "level": 2,
+      "type": "calibration",
+      "scenario": "Tu modelo de ML tiene 85% accuracy en test set.",
+      "initial_question": "¿Probabilidad de que tenga >80% accuracy en producción?",
+      "correct_probability": 0.5,
+      "actual_outcome": false,
+      "explanation": "Overfitting y data drift hacen que accuracy en producción sea típicamente menor que en test. Sé conservador.",
+      "bias_tags": ["optimism_bias"],
+      "difficulty": "medium",
+      "topic": "machine_learning"
+    },
+    {
+      "id": "bay_048",
+      "level": 5,
+      "type": "probability_update",
+      "scenario": "Evaluando riesgo existencial de IA en próximos 50 años. Expertos varían: 5%-50%. Tu prior: 15%.",
+      "initial_question": "Tu probabilidad inicial",
+      "correct_initial": 0.15,
+      "updates": [
+        {
+          "new_evidence": "IA supera humanos en 90% de tareas cognitivas (60% de escenarios catastróficos vs 20% sin catástrofe)",
+          "likelihood_if_catastrophe": 0.6,
+          "likelihood_if_no_catastrophe": 0.2,
+          "correct_updated_probability": 0.347
+        },
+        {
+          "new_evidence": "Alineamiento y gobernanza avanzan significativamente (30% de catástrofes tienen esto vs 70% sin catástrofe)",
+          "likelihood_if_catastrophe": 0.3,
+          "likelihood_if_no_catastrophe": 0.7,
+          "correct_updated_probability": 0.183
+        }
+      ],
+      "explanation": "Riesgos de cola requieren: modelar incertidumbre profunda, evitar falsa precisión, actualizar con señales débiles.",
+      "bias_tags": ["normalcy_bias", "scope_insensitivity"],
+      "difficulty": "very_hard",
+      "topic": "existential_risk"
+    },
+    {
+      "id": "bay_049",
+      "level": 3,
+      "type": "calibration",
+      "scenario": "Forecasting electoral: encuestas dan 52% al candidato A, 48% al B (margen de error ±3%).",
+      "initial_question": "¿Probabilidad de que gane A?",
+      "correct_probability": 0.65,
+      "actual_outcome": true,
+      "explanation": "52% vs 48% con ±3% de margen → no es seguro. Modelos buenos (ej: FiveThirtyEight) darían ~60-70% al favorito.",
+      "bias_tags": ["overconfidence"],
+      "difficulty": "medium",
+      "topic": "electoral_forecasting"
+    },
+    {
+      "id": "bay_050",
+      "level": 4,
+      "type": "bias_detection",
+      "scenario": "Lanzas un producto. Primeros 10 usuarios ADORAN el producto (10/10 reviews). Proyectas: '100% de usuarios lo amarán'.",
+      "initial_question": "¿Probabilidad real de satisfacción alta a largo plazo?",
+      "correct_probability": 0.6,
+      "typical_biased_answer": 0.95,
+      "bias_name": "Sesgo de Muestra Pequeña + Regresión a la Media",
+      "bias_explanation": "Muestras pequeñas son volátiles. Early adopters son sesgados. Satisfacción regresará a media (~60-70%).",
+      "difficulty": "hard",
+      "topic": "product_management"
+    },
+    {
+      "id": "bay_051",
+      "level": 5,
+      "type": "probability_update",
+      "scenario": "Merger & Acquisition: ¿Se aprobará la fusión por reguladores? Tasa base: 70% aprobación en deals similares.",
+      "initial_question": "Probabilidad inicial",
+      "correct_initial": 0.7,
+      "updates": [
+        {
+          "new_evidence": "Regulador antimonopolio inicia investigación profunda (40% de aprobados tienen esto vs 90% de rechazados)",
+          "likelihood_if_approved": 0.4,
+          "likelihood_if_rejected": 0.9,
+          "correct_updated_probability": 0.509
+        },
+        {
+          "new_evidence": "Empresas ofrecen concesiones significativas (80% de aprobados hacen esto vs 30% de rechazados)",
+          "likelihood_if_approved": 0.8,
+          "likelihood_if_rejected": 0.3,
+          "correct_updated_probability": 0.762
+        }
+      ],
+      "explanation": "M&A forecasting combina: precedentes regulatorios, señales de proceso, y concesiones estratégicas.",
+      "bias_tags": ["narrative_fallacy"],
+      "difficulty": "very_hard",
+      "topic": "corporate_finance"
+    },
+    {
+      "id": "bay_052",
+      "level": 2,
+      "type": "bias_detection",
+      "scenario": "Juegas póker. Has perdido 5 manos seguidas. Piensas: 'Ahora DEBO ganar la próxima'.",
+      "initial_question": "¿Tu probabilidad de ganar la próxima mano aumentó?",
+      "correct_answer": "No",
+      "bias_name": "Falacia del Apostador",
+      "bias_explanation": "Manos de póker son independientes (asumiendo juego justo). Pérdidas pasadas no afectan probabilidades futuras.",
+      "difficulty": "medium",
+      "topic": "gambling"
+    },
+    {
+      "id": "bay_053",
+      "level": 3,
+      "type": "calibration",
+      "scenario": "Tu intuición dice que proyecto X será exitoso. No tienes datos concretos.",
+      "initial_question": "¿Qué probabilidad asignas?",
+      "correct_probability": 0.3,
+      "actual_outcome": false,
+      "explanation": "Intuición sin datos → usa tasa base del dominio. No confíes ciegamente en gut feeling. Busca datos.",
+      "bias_tags": ["overconfidence", "optimism_bias"],
+      "difficulty": "medium",
+      "topic": "decision_making"
+    },
+    {
+      "id": "bay_054",
+      "level": 4,
+      "type": "probability_update",
+      "scenario": "Predicción de mercado: ¿Subirá el S&P 500 el próximo año? Históricamente sube ~70% de los años.",
+      "initial_question": "Probabilidad inicial (tasa base histórica)",
+      "correct_initial": 0.7,
+      "updates": [
+        {
+          "new_evidence": "La Fed sube tasas agresivamente (30% de años alcistas tienen esto vs 60% de años bajistas)",
+          "likelihood_if_bullish": 0.3,
+          "likelihood_if_bearish": 0.6,
+          "correct_updated_probability": 0.538
+        }
+      ],
+      "explanation": "Mercados financieros: empieza con tasa base histórica, actualiza con señales macro concretas.",
+      "bias_tags": ["recency_bias"],
+      "difficulty": "hard",
+      "topic": "finance"
+    },
+    {
+      "id": "bay_055",
+      "level": 5,
+      "type": "calibration",
+      "scenario": "Eres superforecaster. Debes predecir: '¿Habrá más de 100,000 casos de X enfermedad en Y país en próximos 90 días?'",
+      "initial_question": "Asigna probabilidad precisa (usa todas las técnicas: clase de referencia, fermi estimation, señales leading)",
+      "correct_probability": 0.42,
+      "actual_outcome": true,
+      "explanation": "Superforecasting requiere: (1) Descomponer pregunta, (2) Buscar clase de referencia, (3) Ajustar por factores específicos, (4) Calibrar continuamente, (5) Evitar narrativas",
+      "bias_tags": ["base_rate_neglect", "narrative_fallacy", "overconfidence"],
+      "difficulty": "very_hard",
+      "topic": "superforecasting"
+    }
+  ]
+}

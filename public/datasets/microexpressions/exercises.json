@@ -1,0 +1,612 @@
+[
+  {
+    "id": "micro_happiness_L1_01",
+    "skill": "microexpressions",
+    "level": 1,
+    "type": "image",
+    "media_url": "https://raw.githubusercontent.com/oarriaga/face_classification/master/images/happy.jpg",
+    "correct_answer": "happiness",
+    "facs_explanation": "AU6 + AU12 - Sonrisa genuina de Duchenne. Las arrugas 'patas de gallo' (AU6) indican que es felicidad auténtica, no una sonrisa social.",
+    "duration_ms": null
+  },
+  {
+    "id": "micro_happiness_L1_02",
+    "skill": "microexpressions",
+    "level": 1,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "happiness",
+    "facs_explanation": "AU12 + AU6 + AU25 - Sonrisa con boca abierta. Mejillas elevadas empujando párpados inferiores + comisuras labiales elevadas.",
+    "duration_ms": null
+  },
+  {
+    "id": "micro_sadness_L1_01",
+    "skill": "microexpressions",
+    "level": 1,
+    "type": "image",
+    "media_url": "https://raw.githubusercontent.com/oarriaga/face_classification/master/images/sad.jpg",
+    "correct_answer": "sadness",
+    "facs_explanation": "AU1 + AU4 + AU15 - Cejas en forma oblicua (internas levantadas y juntas) + comisuras labiales hacia abajo. Expresión característica de tristeza.",
+    "duration_ms": null
+  },
+  {
+    "id": "micro_sadness_L1_02",
+    "skill": "microexpressions",
+    "level": 1,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "sadness",
+    "facs_explanation": "AU1 + AU4 + AU15 + AU17 - Tristeza intensa con barbilla arrugada (AU17), cejas oblicuas marcadas.",
+    "duration_ms": null
+  },
+  {
+    "id": "micro_anger_L1_01",
+    "skill": "microexpressions",
+    "level": 1,
+    "type": "image",
+    "media_url": "https://raw.githubusercontent.com/oarriaga/face_classification/master/images/angry.jpg",
+    "correct_answer": "anger",
+    "facs_explanation": "AU4 + AU5 + AU7 + AU23 - Cejas bajadas y juntas en V invertida + ojos abiertos tensos + labios apretados. Mirada penetrante característica de ira.",
+    "duration_ms": null
+  },
+  {
+    "id": "micro_anger_L1_02",
+    "skill": "microexpressions",
+    "level": 1,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "anger",
+    "facs_explanation": "AU4 + AU5 + AU7 + AU24 - Ira con labios presionados (AU24), entrecejo muy marcado.",
+    "duration_ms": null
+  },
+  {
+    "id": "micro_fear_L1_01",
+    "skill": "microexpressions",
+    "level": 1,
+    "type": "image",
+    "media_url": "https://raw.githubusercontent.com/oarriaga/face_classification/master/images/fear.jpg",
+    "correct_answer": "fear",
+    "facs_explanation": "AU1 + AU2 + AU5 + AU20 + AU25 - Cejas elevadas + ojos muy abiertos + labios estirados horizontalmente. El estiramiento horizontal (AU20) diferencia miedo de sorpresa.",
+    "duration_ms": null
+  },
+  {
+    "id": "micro_fear_L1_02",
+    "skill": "microexpressions",
+    "level": 1,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "fear",
+    "facs_explanation": "AU1 + AU2 + AU5 + AU20 + AU26 - Miedo con boca abierta, blancos de ojos visibles arriba, labios estirados (no relajados).",
+    "duration_ms": null
+  },
+  {
+    "id": "micro_surprise_L1_01",
+    "skill": "microexpressions",
+    "level": 1,
+    "type": "image",
+    "media_url": "https://raw.githubusercontent.com/oarriaga/face_classification/master/images/surprise.jpg",
+    "correct_answer": "surprise",
+    "facs_explanation": "AU1 + AU2 + AU5 + AU26 - Cejas muy elevadas creando arrugas horizontales + ojos redondos + mandíbula caída con labios RELAJADOS (diferencia clave vs miedo).",
+    "duration_ms": null
+  },
+  {
+    "id": "micro_surprise_L1_02",
+    "skill": "microexpressions",
+    "level": 1,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "surprise",
+    "facs_explanation": "AU1 + AU2 + AU5 + AU26 + AU27 - Sorpresa intensa, boca muy abierta pero relajada, arrugas horizontales en frente muy marcadas.",
+    "duration_ms": null
+  },
+  {
+    "id": "micro_disgust_L1_01",
+    "skill": "microexpressions",
+    "level": 1,
+    "type": "image",
+    "media_url": "https://raw.githubusercontent.com/oarriaga/face_classification/master/images/disgust.jpg",
+    "correct_answer": "disgust",
+    "facs_explanation": "AU9 + AU10 + AU17 - Nariz arrugada (arrugas en puente nasal) + labio superior levantado + barbilla elevada. Reacción a algo desagradable.",
+    "duration_ms": null
+  },
+  {
+    "id": "micro_disgust_L1_02",
+    "skill": "microexpressions",
+    "level": 1,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "disgust",
+    "facs_explanation": "AU9 + AU10 + AU4 - Disgusto con entrecejo (AU4), nariz arrugada, labio superior levantado asimétricamente.",
+    "duration_ms": null
+  },
+  {
+    "id": "micro_contempt_L1_01",
+    "skill": "microexpressions",
+    "level": 1,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "contempt",
+    "facs_explanation": "R12 - Única emoción ASIMÉTRICA. Una comisura labial elevada hacia un lado. Señal de superioridad moral o desdén.",
+    "duration_ms": null
+  },
+  {
+    "id": "micro_contempt_L1_02",
+    "skill": "microexpressions",
+    "level": 1,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "contempt",
+    "facs_explanation": "R12 + R14 - Desprecio con hoyuelo asimétrico, comisura labial elevada en un solo lado.",
+    "duration_ms": null
+  },
+  {
+    "id": "micro_happiness_L2_01",
+    "skill": "microexpressions",
+    "level": 2,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "happiness",
+    "facs_explanation": "AU6 + AU12 - Sonrisa Duchenne clara. Observa las patas de gallo (AU6) que confirman autenticidad.",
+    "duration_ms": 5000
+  },
+  {
+    "id": "micro_happiness_L2_02",
+    "skill": "microexpressions",
+    "level": 2,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "happiness",
+    "facs_explanation": "AU12 + AU6 + AU26 - Risa abierta, mejillas elevadas empujando párpados inferiores.",
+    "duration_ms": 5000
+  },
+  {
+    "id": "micro_sadness_L2_01",
+    "skill": "microexpressions",
+    "level": 2,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "sadness",
+    "facs_explanation": "AU1 + AU4 + AU15 - Forma oblicua de cejas (clave: internas levantadas), comisuras labiales caídas.",
+    "duration_ms": 5000
+  },
+  {
+    "id": "micro_sadness_L2_02",
+    "skill": "microexpressions",
+    "level": 2,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "sadness",
+    "facs_explanation": "AU1 + AU4 + AU15 + AU17 - Tristeza con barbilla arrugada, mirada caída.",
+    "duration_ms": 5000
+  },
+  {
+    "id": "micro_anger_L2_01",
+    "skill": "microexpressions",
+    "level": 2,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "anger",
+    "facs_explanation": "AU4 + AU5 + AU7 + AU23 - Entrecejo en V invertida, ojos abiertos y tensos, labios apretados.",
+    "duration_ms": 5000
+  },
+  {
+    "id": "micro_anger_L2_02",
+    "skill": "microexpressions",
+    "level": 2,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "anger",
+    "facs_explanation": "AU4 + AU5 + AU7 + AU10 - Ira intensa con labio superior levantado, mirada fija.",
+    "duration_ms": 5000
+  },
+  {
+    "id": "micro_fear_L2_01",
+    "skill": "microexpressions",
+    "level": 2,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "fear",
+    "facs_explanation": "AU1 + AU2 + AU5 + AU20 + AU25 - Cejas elevadas, ojos abiertos, labios estirados HORIZONTALMENTE (diferencia con sorpresa).",
+    "duration_ms": 5000
+  },
+  {
+    "id": "micro_fear_L2_02",
+    "skill": "microexpressions",
+    "level": 2,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "fear",
+    "facs_explanation": "AU1 + AU2 + AU5 + AU20 - Miedo con estiramiento horizontal labial visible, blancos oculares superiores visibles.",
+    "duration_ms": 5000
+  },
+  {
+    "id": "micro_surprise_L2_01",
+    "skill": "microexpressions",
+    "level": 2,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "surprise",
+    "facs_explanation": "AU1 + AU2 + AU5 + AU26 - Arrugas horizontales en frente, ojos redondos, boca abierta RELAJADA (vs miedo: tensa).",
+    "duration_ms": 5000
+  },
+  {
+    "id": "micro_surprise_L2_02",
+    "skill": "microexpressions",
+    "level": 2,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "surprise",
+    "facs_explanation": "AU1 + AU2 + AU5 + AU26 - Cejas arqueadas, mandíbula caída, expresión fugaz (sorpresa dura <1 seg típicamente).",
+    "duration_ms": 5000
+  },
+  {
+    "id": "micro_disgust_L2_01",
+    "skill": "microexpressions",
+    "level": 2,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "disgust",
+    "facs_explanation": "AU9 + AU10 + AU17 - Nariz arrugada (arrugas visibles en puente), labio superior levantado, barbilla elevada.",
+    "duration_ms": 5000
+  },
+  {
+    "id": "micro_disgust_L2_02",
+    "skill": "microexpressions",
+    "level": 2,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "disgust",
+    "facs_explanation": "AU9 + AU10 - Disgusto con arrugamiento nasal marcado, labio superior puede ser asimétrico.",
+    "duration_ms": 5000
+  },
+  {
+    "id": "micro_contempt_L2_01",
+    "skill": "microexpressions",
+    "level": 2,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "contempt",
+    "facs_explanation": "R12 - Asimetría clara: UNA comisura labial elevada. Única emoción asimétrica.",
+    "duration_ms": 5000
+  },
+  {
+    "id": "micro_contempt_L2_02",
+    "skill": "microexpressions",
+    "level": 2,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "contempt",
+    "facs_explanation": "R12 + AU4 - Desprecio con leve entrecejo, comisura elevada unilateralmente.",
+    "duration_ms": 5000
+  },
+  {
+    "id": "micro_happiness_L3_01",
+    "skill": "microexpressions",
+    "level": 3,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "happiness",
+    "facs_explanation": "AU6 leve + AU12 - Sonrisa sutil pero genuina. Busca las patas de gallo sutiles (AU6).",
+    "duration_ms": 3000
+  },
+  {
+    "id": "micro_happiness_L3_02",
+    "skill": "microexpressions",
+    "level": 3,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "happiness",
+    "facs_explanation": "AU12 + AU6 sutiles - Felicidad contenida, elevación leve de mejillas detectando contracción orbicular.",
+    "duration_ms": 3000
+  },
+  {
+    "id": "micro_sadness_L3_01",
+    "skill": "microexpressions",
+    "level": 3,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "sadness",
+    "facs_explanation": "AU1 + AU4 sutiles - Forma oblicua leve de cejas, apenas perceptible AU15.",
+    "duration_ms": 3000
+  },
+  {
+    "id": "micro_sadness_L3_02",
+    "skill": "microexpressions",
+    "level": 3,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "sadness",
+    "facs_explanation": "AU1 + AU4 + AU15 sutiles - Tristeza contenida, observa la leve elevación interna de cejas.",
+    "duration_ms": 3000
+  },
+  {
+    "id": "micro_anger_L3_01",
+    "skill": "microexpressions",
+    "level": 3,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "anger",
+    "facs_explanation": "AU4 + AU7 sutiles - Ira contenida. Leve tensión entrecejo y párpados.",
+    "duration_ms": 3000
+  },
+  {
+    "id": "micro_anger_L3_02",
+    "skill": "microexpressions",
+    "level": 3,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "anger",
+    "facs_explanation": "AU4 + AU5 + AU7 sutiles - Ira sutil con leve apertura ocular tensa.",
+    "duration_ms": 3000
+  },
+  {
+    "id": "micro_fear_L3_01",
+    "skill": "microexpressions",
+    "level": 3,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "fear",
+    "facs_explanation": "AU1 + AU2 + AU20 sutiles - Miedo contenido. Busca el leve estiramiento horizontal de labios (AU20).",
+    "duration_ms": 3000
+  },
+  {
+    "id": "micro_fear_L3_02",
+    "skill": "microexpressions",
+    "level": 3,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "fear",
+    "facs_explanation": "AU1 + AU2 + AU5 + AU20 sutiles - Cejas levemente elevadas, estiramiento horizontal labial apenas visible.",
+    "duration_ms": 3000
+  },
+  {
+    "id": "micro_surprise_L3_01",
+    "skill": "microexpressions",
+    "level": 3,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "surprise",
+    "facs_explanation": "AU1 + AU2 + AU5 sutiles - Sorpresa inicial/sutil, leve elevación de cejas y ojos.",
+    "duration_ms": 3000
+  },
+  {
+    "id": "micro_surprise_L3_02",
+    "skill": "microexpressions",
+    "level": 3,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "surprise",
+    "facs_explanation": "AU1 + AU2 + AU26 sutiles - Inicio de sorpresa, mandíbula apenas cayendo.",
+    "duration_ms": 3000
+  },
+  {
+    "id": "micro_disgust_L3_01",
+    "skill": "microexpressions",
+    "level": 3,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "disgust",
+    "facs_explanation": "AU9 + AU10 sutiles - Disgusto contenido, leve arrugamiento nasal.",
+    "duration_ms": 3000
+  },
+  {
+    "id": "micro_disgust_L3_02",
+    "skill": "microexpressions",
+    "level": 3,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "disgust",
+    "facs_explanation": "AU9 sutil - Inicio de disgusto, apenas arruga nasal visible.",
+    "duration_ms": 3000
+  },
+  {
+    "id": "micro_contempt_L3_01",
+    "skill": "microexpressions",
+    "level": 3,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "contempt",
+    "facs_explanation": "R12 sutil - Asimetría muy leve de comisura labial. Desprecio contenido.",
+    "duration_ms": 3000
+  },
+  {
+    "id": "micro_contempt_L3_02",
+    "skill": "microexpressions",
+    "level": 3,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "contempt",
+    "facs_explanation": "R12 muy sutil - Apenas perceptible elevación unilateral de comisura.",
+    "duration_ms": 3000
+  },
+  {
+    "id": "micro_happiness_L4_01",
+    "skill": "microexpressions",
+    "level": 4,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "happiness",
+    "facs_explanation": "AU6 + AU12 microexpresión - Felicidad genuina fugaz (<200ms). Patas de gallo apenas visibles.",
+    "duration_ms": 2000
+  },
+  {
+    "id": "micro_happiness_L4_02",
+    "skill": "microexpressions",
+    "level": 4,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "happiness",
+    "facs_explanation": "AU12 + AU6 flash - Microexpresión de felicidad genuina. Duración <500ms.",
+    "duration_ms": 1500
+  },
+  {
+    "id": "micro_sadness_L4_01",
+    "skill": "microexpressions",
+    "level": 4,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "sadness",
+    "facs_explanation": "AU1 + AU4 microexpresión - Flash de tristeza. Forma oblicua fugaz de cejas.",
+    "duration_ms": 2000
+  },
+  {
+    "id": "micro_sadness_L4_02",
+    "skill": "microexpressions",
+    "level": 4,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "sadness",
+    "facs_explanation": "AU1 + AU4 + AU15 flash - Microexpresión de tristeza, duración <500ms.",
+    "duration_ms": 1500
+  },
+  {
+    "id": "micro_anger_L4_01",
+    "skill": "microexpressions",
+    "level": 4,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "anger",
+    "facs_explanation": "AU4 + AU7 microexpresión - Flash de ira contenida. Duración <500ms.",
+    "duration_ms": 2000
+  },
+  {
+    "id": "micro_anger_L4_02",
+    "skill": "microexpressions",
+    "level": 4,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "anger",
+    "facs_explanation": "AU4 + AU5 + AU7 flash - Microexpresión de ira.",
+    "duration_ms": 1500
+  },
+  {
+    "id": "micro_fear_L4_01",
+    "skill": "microexpressions",
+    "level": 4,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "fear",
+    "facs_explanation": "AU1 + AU2 + AU20 microexpresión - Flash de miedo. Estiramiento horizontal labial fugaz.",
+    "duration_ms": 2000
+  },
+  {
+    "id": "micro_fear_L4_02",
+    "skill": "microexpressions",
+    "level": 4,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "fear",
+    "facs_explanation": "AU1 + AU2 + AU5 + AU20 flash - Microexpresión de miedo.",
+    "duration_ms": 1500
+  },
+  {
+    "id": "micro_disgust_L4_01",
+    "skill": "microexpressions",
+    "level": 4,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "disgust",
+    "facs_explanation": "AU9 + AU10 microexpresión - Flash de disgusto. Arrugamiento nasal fugaz.",
+    "duration_ms": 2000
+  },
+  {
+    "id": "micro_disgust_L4_02",
+    "skill": "microexpressions",
+    "level": 4,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "disgust",
+    "facs_explanation": "AU9 flash - Microexpresión de disgusto puro.",
+    "duration_ms": 1500
+  },
+  {
+    "id": "micro_contempt_L4_01",
+    "skill": "microexpressions",
+    "level": 4,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "contempt",
+    "facs_explanation": "R12 microexpresión - Flash asimétrico. Desprecio fugaz.",
+    "duration_ms": 2000
+  },
+  {
+    "id": "micro_contempt_L4_02",
+    "skill": "microexpressions",
+    "level": 4,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "contempt",
+    "facs_explanation": "R12 flash - Microexpresión asimétrica de desprecio.",
+    "duration_ms": 1500
+  },
+  {
+    "id": "micro_mixed_L5_01",
+    "skill": "microexpressions",
+    "level": 5,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "sadness",
+    "facs_explanation": "AU1 + AU4 + AU12 - Mezcla: tristeza (AU1+AU4) intentando ocultarse con sonrisa social (AU12 sin AU6). La tristeza domina.",
+    "duration_ms": 1500
+  },
+  {
+    "id": "micro_mixed_L5_02",
+    "skill": "microexpressions",
+    "level": 5,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "fear",
+    "facs_explanation": "AU1 + AU2 + AU5 + AU20 + AU12 - Mezcla: miedo (dominante) con intento de sonrisa. AU20 (estiramiento horizontal) revela miedo subyacente.",
+    "duration_ms": 1500
+  },
+  {
+    "id": "micro_mixed_L5_03",
+    "skill": "microexpressions",
+    "level": 5,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "anger",
+    "facs_explanation": "AU4 + AU7 + AU12 - Mezcla: ira contenida (AU4+AU7) con sonrisa falsa (AU12 sin AU6). Contexto: situación social tensa.",
+    "duration_ms": 1500
+  },
+  {
+    "id": "micro_mixed_L5_04",
+    "skill": "microexpressions",
+    "level": 5,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "contempt",
+    "facs_explanation": "R12 + AU6 parcial - Mezcla: desprecio (R12 asimétrico) con leve felicidad genuina. Situación: burla o sarcasmo afectivo.",
+    "duration_ms": 1500
+  },
+  {
+    "id": "micro_mixed_L5_05",
+    "skill": "microexpressions",
+    "level": 5,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "disgust",
+    "facs_explanation": "AU9 + AU10 + AU12 - Mezcla: disgusto (AU9+AU10) con sonrisa social. Contexto: ocultando reacción negativa en situación social.",
+    "duration_ms": 1500
+  },
+  {
+    "id": "micro_happiness_L5_01",
+    "skill": "microexpressions",
+    "level": 5,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "happiness",
+    "facs_explanation": "AU6 + AU12 + AU4 leve - Felicidad genuina con leve entrecejo (concentración o preocupación simultánea). Contexto: alivio tras estrés.",
+    "duration_ms": 1500
+  },
+  {
+    "id": "micro_surprise_L5_01",
+    "skill": "microexpressions",
+    "level": 5,
+    "type": "image",
+    "media_url": "https://thispersondoesnotexist.com",
+    "correct_answer": "surprise",
+    "facs_explanation": "AU1 + AU2 + AU5 + AU26 inicial → transición - Sorpresa transitando a otra emoción. Captura el momento inicial (<500ms). Contexto: reacción a noticia inesperada.",
+    "duration_ms": 1000
+  }
+]

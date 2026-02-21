@@ -1,0 +1,32 @@
+[
+  {
+    "id": "micro_001",
+    "skill": "microexpressions",
+    "level": 1,
+    "type": "image",
+    "media_url": "/datasets/microexpressions/happy_01.jpg",
+    "correct_answer": "happiness",
+    "facs_explanation": "AU 6 (Orbicularis Oculi) + AU 12 (Zygomatic Major) - Sonrisa genuina de Duchenne. Las arrugas alrededor de los ojos (patas de gallo) indican felicidad auténtica.",
+    "duration_ms": 2000
+  },
+  {
+    "id": "micro_002",
+    "skill": "microexpressions",
+    "level": 1,
+    "type": "image",
+    "media_url": "/datasets/microexpressions/sad_01.jpg",
+    "correct_answer": "sadness",
+    "facs_explanation": "AU 1 (Inner Brow Raiser) + AU 4 (Brow Lowerer) + AU 15 (Lip Corner Depressor) - Tristeza. Cejas levantadas en el interior y esquinas de la boca hacia abajo.",
+    "duration_ms": 2000
+  },
+  {
+    "id": "micro_003",
+    "skill": "microexpressions",
+    "level": 1,
+    "type": "image",
+    "media_url": "/datasets/microexpressions/anger_01.jpg",
+    "correct_answer": "anger",
+    "facs_explanation": "AU 4 (Brow Lowerer) + AU 5 (Upper Lid Raiser) + AU 7 (Lid Tightener) + AU 23 (Lip Tightener) - Ira. Cejas juntas y hacia abajo, ojos abiertos, labios apretados.",
+    "duration_ms": 2000
+  }
+]

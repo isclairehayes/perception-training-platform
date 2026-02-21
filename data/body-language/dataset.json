@@ -1,0 +1,1323 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "total_items": 35,
+    "categories": ["neutral", "estrés", "confianza", "mentira", "atracción", "incomodidad"],
+    "sources": "YouTube Creative Commons, Pexels, Unsplash",
+    "last_updated": "2026-02-21"
+  },
+  "exercises": [
+    {
+      "id": "bl_001",
+      "skill": "body_language",
+      "level": 1,
+      "type": "video",
+      "media_url": "/placeholders/bl_001.mp4",
+      "title": "Brazos Cruzados - Defensiva Básica",
+      "description": "Persona en reunión cruza los brazos repentinamente",
+      "baseline_context": "La persona comienza con brazos relajados a los lados, postura abierta, contacto visual directo.",
+      "baseline_duration_sec": 5,
+      "deviation_timestamp_sec": 8,
+      "category": "estrés",
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "bl_001_q1",
+          "question": "¿Qué cambio principal observas en la postura?",
+          "type": "emotional_state",
+          "correct_answer": "Brazos cruzados - postura defensiva",
+          "options": [
+            "Brazos cruzados - postura defensiva",
+            "Manos en los bolsillos - desinterés",
+            "Inclinación hacia adelante - interés",
+            "Ningún cambio notable"
+          ],
+          "explanation": "Los brazos cruzados son una barrera física que indica incomodidad, desacuerdo o defensividad. Joe Navarro: 'Los brazos cruzados son un intento de proteger el torso (centro vital) de amenazas percibidas.'"
+        },
+        {
+          "id": "bl_001_q2",
+          "question": "¿Qué emoción o estado sugiere este cambio?",
+          "type": "emotional_state",
+          "correct_answer": "Defensividad o desacuerdo",
+          "options": [
+            "Confianza y apertura",
+            "Defensividad o desacuerdo",
+            "Atracción romántica",
+            "Aburrimiento extremo"
+          ],
+          "explanation": "El cambio desde una postura abierta a brazos cruzados indica un shift emocional negativo, probablemente en respuesta a algo dicho o hecho."
+        }
+      ],
+      "theory_tags": ["baseline_deviation", "defensive_posture", "barrier_signals"],
+      "references": ["Navarro, Joe - What Every Body is Saying", "Pease, Allan - The Definitive Book of Body Language"]
+    },
+    {
+      "id": "bl_002",
+      "skill": "body_language",
+      "level": 1,
+      "type": "video",
+      "media_url": "/placeholders/bl_002.mp4",
+      "title": "Mirada Esquiva - Incomodidad Básica",
+      "description": "Persona evita contacto visual durante pregunta directa",
+      "baseline_context": "Contacto visual normal del 60-70% durante conversación casual.",
+      "baseline_duration_sec": 6,
+      "deviation_timestamp_sec": 10,
+      "category": "incomodidad",
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "bl_002_q1",
+          "question": "¿Qué cambio observas en el patrón de contacto visual?",
+          "type": "emotional_state",
+          "correct_answer": "Evita la mirada consistentemente",
+          "options": [
+            "Mantiene contacto visual constante",
+            "Evita la mirada consistentemente",
+            "Contacto visual aumenta",
+            "Parpadea excesivamente sin evitar la mirada"
+          ],
+          "explanation": "La evitación de contacto visual durante una pregunta directa suele indicar incomodidad, ansiedad o posible deshonestidad."
+        }
+      ],
+      "theory_tags": ["eye_contact", "discomfort", "baseline_deviation"],
+      "references": ["Navarro, Joe - What Every Body is Saying"]
+    },
+    {
+      "id": "bl_003",
+      "skill": "body_language",
+      "level": 1,
+      "type": "image",
+      "media_url": "/placeholders/bl_003.jpg",
+      "title": "Postura Expansiva - Confianza Alta",
+      "description": "Ejecutivo con manos detrás de la cabeza, piernas abiertas",
+      "baseline_context": null,
+      "category": "confianza",
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "bl_003_q1",
+          "question": "¿Qué indica esta postura expansiva?",
+          "type": "emotional_state",
+          "correct_answer": "Alta confianza y dominancia territorial",
+          "options": [
+            "Nerviosismo extremo",
+            "Alta confianza y dominancia territorial",
+            "Desinterés total",
+            "Confusión mental"
+          ],
+          "explanation": "Amy Cuddy: posturas expansivas aumentan testosterona y reducen cortisol. Ocupar más espacio físico señala confianza y estatus. Allan Pease: 'La posición de manos detrás de la cabeza es un gesto de superioridad territorial.'"
+        }
+      ],
+      "theory_tags": ["power_posing", "territorial_displays", "confidence_signals"],
+      "references": ["Pease, Allan - The Definitive Book of Body Language", "Cuddy, Amy - Presence"]
+    },
+    {
+      "id": "bl_004",
+      "skill": "body_language",
+      "level": 1,
+      "type": "video",
+      "media_url": "/placeholders/bl_004.mp4",
+      "title": "Tocarse el Cuello - Señal de Estrés",
+      "description": "Persona se toca el cuello repetidamente durante entrevista",
+      "baseline_context": "Manos relajadas sobre la mesa, sin gestos de auto-contacto.",
+      "baseline_duration_sec": 4,
+      "deviation_timestamp_sec": 7,
+      "category": "estrés",
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "bl_004_q1",
+          "question": "¿Qué tipo de gesto de auto-contacto observas?",
+          "type": "emotional_state",
+          "correct_answer": "Tocarse/cubrirse el cuello",
+          "options": [
+            "Tocarse/cubrirse el cuello",
+            "Frotarse las manos",
+            "Tocarse la nariz",
+            "Rascarse la cabeza"
+          ],
+          "explanation": "Joe Navarro: 'El cuello es una zona extremadamente vulnerable. Tocarlo o cubrirlo es un gesto pacificador que indica estrés, ansiedad o sensación de amenaza.'"
+        }
+      ],
+      "theory_tags": ["pacifying_behaviors", "neck_touching", "stress_indicators"],
+      "references": ["Navarro, Joe - What Every Body is Saying"]
+    },
+    {
+      "id": "bl_005",
+      "skill": "body_language",
+      "level": 1,
+      "type": "image",
+      "media_url": "/placeholders/bl_005.jpg",
+      "title": "Pies Apuntando a la Salida",
+      "description": "Persona en conversación con torso hacia el hablante pero pies hacia la puerta",
+      "baseline_context": null,
+      "category": "incomodidad",
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "bl_005_q1",
+          "question": "¿Qué revelan los pies en esta situación?",
+          "type": "emotional_state",
+          "correct_answer": "Deseo de escapar o terminar la interacción",
+          "options": [
+            "Gran interés en la conversación",
+            "Deseo de escapar o terminar la interacción",
+            "Comodidad total",
+            "Postura neutral sin significado"
+          ],
+          "explanation": "Joe Navarro: 'Los pies son los indicadores más honestos de nuestras intenciones. Apuntan hacia donde queremos ir, incluso si nuestro torso está orientado educadamente hacia el hablante.'"
+        }
+      ],
+      "theory_tags": ["feet_direction", "intention_leakage", "discomfort"],
+      "references": ["Navarro, Joe - What Every Body is Saying"]
+    },
+    {
+      "id": "bl_006",
+      "skill": "body_language",
+      "level": 2,
+      "type": "video",
+      "media_url": "/placeholders/bl_006.mp4",
+      "title": "Cluster de Señales de Estrés",
+      "description": "Combinación: brazos cruzados + mirada evitativa + tocarse la cara",
+      "baseline_context": "Postura abierta, contacto visual estable, manos visibles y quietas.",
+      "baseline_duration_sec": 6,
+      "deviation_timestamp_sec": 9,
+      "category": "estrés",
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "bl_006_q1",
+          "question": "¿Cuántas señales de incomodidad simultáneas identificas?",
+          "type": "emotional_state",
+          "correct_answer": "3+ señales (cluster de estrés)",
+          "options": [
+            "Ninguna señal clara",
+            "1 señal aislada",
+            "2 señales",
+            "3+ señales (cluster de estrés)"
+          ],
+          "explanation": "La regla del cluster: una sola señal puede ser casual, pero múltiples señales simultáneas (cluster) confirman un estado emocional. Aquí vemos barrera física + evitación ocular + comportamiento pacificador."
+        },
+        {
+          "id": "bl_006_q2",
+          "question": "¿Qué nivel de certeza tienes sobre el estado emocional?",
+          "type": "emotional_state",
+          "correct_answer": "Alta - múltiples señales convergen",
+          "options": [
+            "Baja - podría ser casual",
+            "Media - solo una pista",
+            "Alta - múltiples señales convergen",
+            "Imposible determinar"
+          ],
+          "explanation": "Los clusters de señales aumentan dramáticamente la fiabilidad de la interpretación. Una señal aislada = hipótesis. Cluster = confirmación."
+        }
+      ],
+      "theory_tags": ["signal_clusters", "multiple_indicators", "stress_confirmation"],
+      "references": ["Navarro, Joe - What Every Body is Saying", "Ekman, Paul - Telling Lies"]
+    },
+    {
+      "id": "bl_007",
+      "skill": "body_language",
+      "level": 2,
+      "type": "video",
+      "media_url": "/placeholders/bl_007.mp4",
+      "title": "Mirroring - Rapport Genuino",
+      "description": "Dos personas sincronizando posturas y gestos naturalmente",
+      "baseline_context": "Posturas independientes al inicio de la conversación.",
+      "baseline_duration_sec": 5,
+      "deviation_timestamp_sec": 12,
+      "category": "atracción",
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "bl_007_q1",
+          "question": "¿Qué fenómeno de sincronización observas?",
+          "type": "emotional_state",
+          "correct_answer": "Mirroring (reflejo) de posturas y gestos",
+          "options": [
+            "Posturas opuestas y contrastantes",
+            "Mirroring (reflejo) de posturas y gestos",
+            "Una persona imita pero la otra no",
+            "Ninguna sincronización visible"
+          ],
+          "explanation": "El mirroring inconsciente indica rapport, empatía y conexión emocional. Cuando hay buena sintonía, nuestro cerebro automáticamente sincroniza posturas, gestos y hasta respiración."
+        }
+      ],
+      "theory_tags": ["mirroring", "rapport", "synchrony", "attraction"],
+      "references": ["Pease, Allan - The Definitive Book of Body Language", "Chartrand & Bargh - The Chameleon Effect"]
+    },
+    {
+      "id": "bl_008",
+      "skill": "body_language",
+      "level": 2,
+      "type": "image",
+      "media_url": "/placeholders/bl_008.jpg",
+      "title": "Steepling - Confianza en Competencia",
+      "description": "Persona con dedos formando una torre (steepling) durante presentación",
+      "baseline_context": null,
+      "category": "confianza",
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "bl_008_q1",
+          "question": "¿Qué indica el gesto de 'steepling' (dedos en torre)?",
+          "type": "emotional_state",
+          "correct_answer": "Alta confianza en lo que se dice",
+          "options": [
+            "Nerviosismo extremo",
+            "Alta confianza en lo que se dice",
+            "Desinterés total",
+            "Agresividad pasiva"
+          ],
+          "explanation": "El steepling es uno de los gestos más poderosos de confianza. Joe Navarro: 'Las personas usan steepling cuando se sienten muy seguras de su conocimiento o posición. Es raro verlo en momentos de duda.'"
+        }
+      ],
+      "theory_tags": ["steepling", "confidence_displays", "hand_gestures"],
+      "references": ["Navarro, Joe - What Every Body is Saying"]
+    },
+    {
+      "id": "bl_009",
+      "skill": "body_language",
+      "level": 2,
+      "type": "video",
+      "media_url": "/placeholders/bl_009.mp4",
+      "title": "Bloqueo con Objetos",
+      "description": "Persona coloca laptop/bolso como barrera durante conversación incómoda",
+      "baseline_context": "Mesa despejada, sin objetos entre las personas.",
+      "baseline_duration_sec": 4,
+      "deviation_timestamp_sec": 8,
+      "category": "incomodidad",
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "bl_009_q1",
+          "question": "¿Qué función cumple el objeto en esta interacción?",
+          "type": "emotional_state",
+          "correct_answer": "Barrera psicológica de protección",
+          "options": [
+            "Mera casualidad, sin significado",
+            "Barrera psicológica de protección",
+            "Señal de profesionalismo",
+            "Indica multitasking"
+          ],
+          "explanation": "Cuando alguien se siente amenazado o incómodo, inconscientemente crea barreras físicas con objetos disponibles. Es una forma menos obvia que cruzar los brazos pero con la misma función defensiva."
+        }
+      ],
+      "theory_tags": ["object_barriers", "defensive_behavior", "territorial_markers"],
+      "references": ["Navarro, Joe - What Every Body is Saying"]
+    },
+    {
+      "id": "bl_010",
+      "skill": "body_language",
+      "level": 2,
+      "type": "video",
+      "media_url": "/placeholders/bl_010.mp4",
+      "title": "Dilatación Pupilar - Interés Genuino",
+      "description": "Close-up de pupilas dilatándose durante conversación interesante",
+      "baseline_context": "Pupilas de tamaño normal bajo misma iluminación.",
+      "baseline_duration_sec": 3,
+      "deviation_timestamp_sec": 5,
+      "category": "atracción",
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "bl_010_q1",
+          "question": "¿Qué cambio fisiológico observas?",
+          "type": "emotional_state",
+          "correct_answer": "Pupilas se dilatan",
+          "options": [
+            "Pupilas se contraen",
+            "Pupilas se dilatan",
+            "Aumenta el parpadeo",
+            "Enrojecimiento ocular"
+          ],
+          "explanation": "Allan Pease: 'Las pupilas se dilatan automáticamente ante estímulos que nos atraen o interesan. Es una respuesta del sistema nervioso autónomo que no podemos controlar conscientemente.'"
+        }
+      ],
+      "theory_tags": ["pupil_dilation", "autonomic_responses", "attraction_signals"],
+      "references": ["Pease, Allan - The Definitive Book of Body Language"]
+    },
+    {
+      "id": "bl_011",
+      "skill": "body_language",
+      "level": 3,
+      "type": "video",
+      "media_url": "/placeholders/bl_011.mp4",
+      "title": "Contexto vs Comportamiento: Funeral",
+      "description": "Persona sonriendo en funeral mientras habla de recuerdos felices",
+      "baseline_context": "Contexto: funeral solemne. Comportamiento observado: sonrisa genuina al recordar anécdotas.",
+      "baseline_duration_sec": 0,
+      "deviation_timestamp_sec": 5,
+      "category": "neutral",
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "bl_011_q1",
+          "question": "¿Es inapropiada la sonrisa en este contexto?",
+          "type": "emotional_state",
+          "correct_answer": "No - es congruente con recordar momentos felices",
+          "options": [
+            "Sí - nunca se debe sonreír en funerales",
+            "No - es congruente con recordar momentos felices",
+            "Sí - indica falta de empatía",
+            "No - pero es una sonrisa falsa"
+          ],
+          "explanation": "Contexto es crítico. Una sonrisa en un funeral puede ser: 1) Inapropiada (humor negro), 2) Apropiada (recordar buenos momentos), o 3) Señal de incomodidad. El contexto específico (hablar de recuerdos felices) valida la sonrisa como apropiada."
+        },
+        {
+          "id": "bl_011_q2",
+          "question": "¿Qué principio de interpretación aplica aquí?",
+          "type": "emotional_state",
+          "correct_answer": "El contexto determina el significado del comportamiento",
+          "options": [
+            "Las emociones son universales sin contexto",
+            "El contexto determina el significado del comportamiento",
+            "Solo importa la intensidad de la emoción",
+            "El lenguaje corporal siempre es inequívoco"
+          ],
+          "explanation": "El mismo gesto puede significar cosas radicalmente diferentes según el contexto. Nunca interpretes lenguaje corporal aislado del contexto situacional y cultural."
+        }
+      ],
+      "theory_tags": ["context_dependency", "appropriate_emotions", "interpretation_principles"],
+      "references": ["Ekman, Paul - Emotions Revealed"]
+    },
+    {
+      "id": "bl_012",
+      "skill": "body_language",
+      "level": 3,
+      "type": "video",
+      "media_url": "/placeholders/bl_012.mp4",
+      "title": "Contexto vs Comportamiento: Reunión Tensa",
+      "description": "Persona relajada y sonriente en reunión donde otros están visiblemente tensos",
+      "baseline_context": "Contexto: reunión sobre despidos. Otros participantes: tensos, posturas cerradas. Persona A: relajada.",
+      "baseline_duration_sec": 0,
+      "deviation_timestamp_sec": 8,
+      "category": "incomodidad",
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "bl_012_q1",
+          "question": "¿Qué explica mejor la incongruencia entre contexto y comportamiento?",
+          "type": "incongruence",
+          "correct_answer": "Persona A no está en riesgo / tiene información privilegiada",
+          "options": [
+            "Persona A es socialmente incompetente",
+            "Persona A no está en riesgo / tiene información privilegiada",
+            "Persona A está fingiendo confianza",
+            "Persona A no entiende la situación"
+          ],
+          "explanation": "Cuando una persona está genuinamente relajada en un contexto estresante para otros, suele indicar que no comparte la amenaza. En este caso: no está en riesgo de despido o ya conoce el outcome favorable para ella."
+        }
+      ],
+      "theory_tags": ["context_incongruence", "privileged_information", "differential_stress"],
+      "references": ["Navarro, Joe - Dangerous Personalities"]
+    },
+    {
+      "id": "bl_013",
+      "skill": "body_language",
+      "level": 3,
+      "type": "video",
+      "media_url": "/placeholders/bl_013.mp4",
+      "title": "Incongruencia Verbal-No Verbal",
+      "description": "Persona dice 'estoy feliz de estar aquí' con brazos cruzados, mirada evitativa y tono plano",
+      "baseline_context": "Mensaje verbal: positivo. Señales no verbales: todas negativas.",
+      "baseline_duration_sec": 0,
+      "deviation_timestamp_sec": 3,
+      "category": "mentira",
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "bl_013_q1",
+          "question": "¿Qué canal de comunicación es más fiable aquí?",
+          "type": "incongruence",
+          "correct_answer": "Lenguaje corporal - es más difícil de controlar",
+          "options": [
+            "Palabras - son intencionales y claras",
+            "Lenguaje corporal - es más difícil de controlar",
+            "Ambos son igualmente fiables",
+            "Ninguno es fiable"
+          ],
+          "explanation": "Albert Mehrabian: cuando hay incongruencia entre verbal y no-verbal, el no-verbal es más fiable porque es más automático y difícil de falsificar. El lenguaje corporal 'filtra' lo que las palabras ocultan."
+        },
+        {
+          "id": "bl_013_q2",
+          "question": "¿Qué indica esta incongruencia?",
+          "type": "incongruence",
+          "correct_answer": "La persona está mintiendo o auto-engañándose",
+          "options": [
+            "La persona es totalmente honesta",
+            "La persona está mintiendo o auto-engañándose",
+            "La persona tiene un tic nervioso",
+            "El observador está malinterpretando"
+          ],
+          "explanation": "Paul Ekman: la incongruencia entre canales es uno de los mejores indicadores de deshonestidad. El lenguaje corporal revela la emoción real mientras las palabras transmiten el mensaje deseado."
+        }
+      ],
+      "theory_tags": ["verbal_nonverbal_incongruence", "deception_indicators", "mehrabian_rule"],
+      "references": ["Ekman, Paul - Telling Lies", "Mehrabian, Albert - Silent Messages"]
+    },
+    {
+      "id": "bl_014",
+      "skill": "body_language",
+      "level": 3,
+      "type": "video",
+      "media_url": "/placeholders/bl_014.mp4",
+      "title": "Microexpresión de Desprecio + Palabras Amables",
+      "description": "Persona dice 'me parece una idea interesante' con breve mueca asimétrica de desprecio",
+      "baseline_context": "Mensaje verbal: neutral-positivo. Flash de desprecio (0.2 seg) antes de responder.",
+      "baseline_duration_sec": 0,
+      "deviation_timestamp_sec": 2,
+      "category": "mentira",
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "bl_014_q1",
+          "question": "¿Qué microexpresión precede a las palabras?",
+          "type": "incongruence",
+          "correct_answer": "Desprecio (labio superior levantado asimétricamente)",
+          "options": [
+            "Felicidad (sonrisa de Duchenne)",
+            "Desprecio (labio superior levantado asimétricamente)",
+            "Miedo (cejas levantadas)",
+            "Sorpresa (ojos abiertos)"
+          ],
+          "explanation": "El desprecio se manifiesta como una elevación asimétrica del labio superior (solo un lado). Es la única expresión facial asimétrica universal y es extremadamente difícil de falsificar."
+        },
+        {
+          "id": "bl_014_q2",
+          "question": "¿Cuál es la opinión REAL de la persona?",
+          "type": "incongruence",
+          "correct_answer": "Piensa que la idea es inferior o estúpida",
+          "options": [
+            "Le parece interesante de verdad",
+            "Piensa que la idea es inferior o estúpida",
+            "No tiene opinión formada",
+            "Está genuinamente confundida"
+          ],
+          "explanation": "La microexpresión de desprecio filtra la opinión real. Las microexpresiones ocurren en 1/25 - 1/5 de segundo y revelan emociones genuinas antes de que el control consciente las suprima."
+        }
+      ],
+      "theory_tags": ["microexpressions", "contempt", "deception", "leakage"],
+      "references": ["Ekman, Paul - Emotions Revealed", "Ekman, Paul - Telling Lies"]
+    },
+    {
+      "id": "bl_015",
+      "skill": "body_language",
+      "level": 3,
+      "type": "video",
+      "media_url": "/placeholders/bl_015.mp4",
+      "title": "Cambio de Baseline Bajo Presión",
+      "description": "Persona relaja completamente tras pregunta incómoda (relief vs freeze response)",
+      "baseline_context": "Nivel de estrés moderado y estable durante entrevista. Pregunta sensible → relajación súbita.",
+      "baseline_duration_sec": 8,
+      "deviation_timestamp_sec": 12,
+      "category": "mentira",
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "bl_015_q1",
+          "question": "¿Qué explica la relajación súbita después de la pregunta difícil?",
+          "type": "emotional_state",
+          "correct_answer": "Relief - la persona ya decidió mentir",
+          "options": [
+            "Confianza genuina en su respuesta",
+            "Relief - la persona ya decidió mentir",
+            "Cansancio físico repentino",
+            "Técnica de meditación instantánea"
+          ],
+          "explanation": "Cuando una pregunta incómoda genera RELAJACIÓN en vez de tensión, es señal de que la persona ya tomó la decisión de mentir. El estrés de 'qué hacer' se disuelve al elegir la mentira. Es contraintuitivo pero altamente revelador."
+        },
+        {
+          "id": "bl_015_q2",
+          "question": "¿Qué respuesta de estrés sería normal ante pregunta incómoda pero honesta?",
+          "type": "emotional_state",
+          "correct_answer": "Aumento de tensión mientras busca la respuesta verdadera",
+          "options": [
+            "Relajación inmediata",
+            "Aumento de tensión mientras busca la respuesta verdadera",
+            "Postura expansiva",
+            "Ningún cambio observable"
+          ],
+          "explanation": "Cuando alguien dice la verdad ante una pregunta difícil, el estrés cognitivo aumenta (recordar detalles exactos, encontrar palabras correctas). La relajación súbita sugiere que la respuesta es fácil... porque es inventada."
+        }
+      ],
+      "theory_tags": ["baseline_shifts", "deception_indicators", "relief_response", "counterintuitive_signals"],
+      "references": ["Navarro, Joe - What Every Body is Saying", "Vrij, Aldert - Detecting Lies and Deceit"]
+    },
+    {
+      "id": "bl_016",
+      "skill": "body_language",
+      "level": 4,
+      "type": "video",
+      "media_url": "/placeholders/bl_016.mp4",
+      "title": "Power Dynamic: Espacio Personal Invadido",
+      "description": "Persona A se acerca invasivamente, Persona B retrocede vs se mantiene firme",
+      "baseline_context": "Distancia conversacional normal (1.2m). Persona A reduce distancia a 0.4m.",
+      "baseline_duration_sec": 5,
+      "deviation_timestamp_sec": 8,
+      "category": "incomodidad",
+      "difficulty": "very_hard",
+      "questions": [
+        {
+          "id": "bl_016_q1",
+          "question": "Si Persona B retrocede, ¿qué dinámica de poder se establece?",
+          "type": "power_dynamic",
+          "correct_answer": "A domina, B acepta rol subordinado",
+          "options": [
+            "A domina, B acepta rol subordinado",
+            "B domina al mantener calma",
+            "Dinámica igualitaria",
+            "Imposible determinar"
+          ],
+          "explanation": "Cuando alguien invade tu espacio personal y tú retrocedes, cedes territorio y estableces una jerarquía. La persona que controla el espacio físico suele controlar la interacción. Allan Pease: 'El territorio es poder.'"
+        },
+        {
+          "id": "bl_016_q2",
+          "question": "Si Persona B se mantiene firme sin retroceder, ¿qué comunica?",
+          "type": "power_dynamic",
+          "correct_answer": "Resistencia a la dominación - igualdad de estatus",
+          "options": [
+            "Agresividad injustificada",
+            "Resistencia a la dominación - igualdad de estatus",
+            "Falta de habilidades sociales",
+            "Miedo reprimido"
+          ],
+          "explanation": "No retroceder ante invasión de espacio personal es una forma no-verbal de decir 'no acepto tu frame de dominancia'. Es una contestación sutil pero poderosa de la jerarquía propuesta."
+        }
+      ],
+      "theory_tags": ["proxemics", "power_dynamics", "territorial_behavior", "status_negotiation"],
+      "references": ["Hall, Edward T. - The Hidden Dimension", "Pease, Allan - The Definitive Book of Body Language"]
+    },
+    {
+      "id": "bl_017",
+      "skill": "body_language",
+      "level": 4,
+      "type": "video",
+      "media_url": "/placeholders/bl_017.mp4",
+      "title": "Power Dynamic: Altura Relativa en Reunión",
+      "description": "Persona permanece de pie mientras otros están sentados durante presentación",
+      "baseline_context": "Reunión donde todos los asistentes están sentados. Presentador permanece de pie todo el tiempo.",
+      "baseline_duration_sec": 0,
+      "deviation_timestamp_sec": 5,
+      "category": "confianza",
+      "difficulty": "very_hard",
+      "questions": [
+        {
+          "id": "bl_017_q1",
+          "question": "¿Qué ventaja de poder otorga estar de pie?",
+          "type": "power_dynamic",
+          "correct_answer": "Dominio visual y psicológico por altura",
+          "options": [
+            "Ninguna - es solo preferencia física",
+            "Dominio visual y psicológico por altura",
+            "Desventaja - parece nervioso",
+            "Igualdad - todos están cómodos"
+          ],
+          "explanation": "La altura relativa es una ventaja de poder primaria. Estar de pie mientras otros están sentados te posiciona literalmente 'por encima', controlando la atención visual y proyectando autoridad. Es una táctica clásica de liderazgo."
+        },
+        {
+          "id": "bl_017_q2",
+          "question": "Si alguien desafía al presentador, ¿qué debería hacer para igualar poder?",
+          "type": "power_dynamic",
+          "correct_answer": "Ponerse de pie también",
+          "options": [
+            "Hablar más fuerte desde su asiento",
+            "Ponerse de pie también",
+            "Cruzar los brazos sentado",
+            "Evitar contacto visual"
+          ],
+          "explanation": "Para neutralizar la ventaja de altura, necesitas igualar la altura física. Muchos líderes instintivamente se ponen de pie cuando alguien desafía su autoridad desde una posición de pie."
+        }
+      ],
+      "theory_tags": ["height_dominance", "spatial_power", "leadership_tactics"],
+      "references": ["Pease, Allan - The Definitive Book of Body Language"]
+    },
+    {
+      "id": "bl_018",
+      "skill": "body_language",
+      "level": 4,
+      "type": "image",
+      "media_url": "/placeholders/bl_018.jpg",
+      "title": "Power Dynamic: Steepling vs Clasped Hands",
+      "description": "Dos ejecutivos negociando: uno con steepling, otro con manos entrelazadas tensas",
+      "baseline_context": null,
+      "category": "confianza",
+      "difficulty": "very_hard",
+      "questions": [
+        {
+          "id": "bl_018_q1",
+          "question": "¿Qué dinámica de poder revelan estos gestos de manos?",
+          "type": "power_dynamic",
+          "correct_answer": "Steepling = confianza/poder, Clasped = ansiedad/menos poder",
+          "options": [
+            "Ambos gestos indican igual confianza",
+            "Steepling = confianza/poder, Clasped = ansiedad/menos poder",
+            "Clasped hands = más confianza",
+            "Imposible determinar sin contexto verbal"
+          ],
+          "explanation": "Navarro: Steepling señala confianza absoluta en la posición. Manos entrelazadas tensamente es un comportamiento pacificador de auto-consuelo que indica ansiedad. En una negociación, estos gestos revelan quién tiene la mano fuerte."
+        }
+      ],
+      "theory_tags": ["hand_gestures", "confidence_vs_anxiety", "negotiation_tells"],
+      "references": ["Navarro, Joe - What Every Body is Saying"]
+    },
+    {
+      "id": "bl_019",
+      "skill": "body_language",
+      "level": 4,
+      "type": "video",
+      "media_url": "/placeholders/bl_019.mp4",
+      "title": "Detección de Incongruencia: Timing",
+      "description": "Persona responde 'sí' pero cabeza asiente con 0.5 segundos de delay",
+      "baseline_context": "En respuestas genuinas, movimientos no-verbales preceden o son simultáneos a palabras.",
+      "baseline_duration_sec": 0,
+      "deviation_timestamp_sec": 3,
+      "category": "mentira",
+      "difficulty": "very_hard",
+      "questions": [
+        {
+          "id": "bl_019_q1",
+          "question": "¿Qué indica el delay entre palabra y gesto?",
+          "type": "incongruence",
+          "correct_answer": "Respuesta fabricada - el gesto se añadió conscientemente",
+          "options": [
+            "Nada - es variación normal",
+            "Respuesta fabricada - el gesto se añadió conscientemente",
+            "Mayor sinceridad por pensar antes de gesticular",
+            "Problema neurológico"
+          ],
+          "explanation": "Paul Ekman: en respuestas genuinas, el lenguaje corporal precede o es simultáneo a las palabras (la emoción genera ambas). Cuando el gesto SIGUE a las palabras, sugiere que fue añadido conscientemente para 'vender' la respuesta."
+        }
+      ],
+      "theory_tags": ["temporal_incongruence", "fabricated_gestures", "deception_timing"],
+      "references": ["Ekman, Paul - Telling Lies"]
+    },
+    {
+      "id": "bl_020",
+      "skill": "body_language",
+      "level": 4,
+      "type": "video",
+      "media_url": "/placeholders/bl_020.mp4",
+      "title": "Freeze, Flight, Fight: Respuesta de Amenaza",
+      "description": "Persona pasa de animada a completamente inmóvil al oír nombre específico",
+      "baseline_context": "Comportamiento animado con gestos frecuentes. Nombre mencionado → inmovilidad total (freeze).",
+      "baseline_duration_sec": 6,
+      "deviation_timestamp_sec": 10,
+      "category": "estrés",
+      "difficulty": "very_hard",
+      "questions": [
+        {
+          "id": "bl_020_q1",
+          "question": "¿Qué respuesta límbica primitiva observas?",
+          "type": "emotional_state",
+          "correct_answer": "Freeze (congelación) - respuesta a amenaza",
+          "options": [
+            "Relajación consciente",
+            "Freeze (congelación) - respuesta a amenaza",
+            "Aumento de energía preparatorio",
+            "Comportamiento social normal"
+          ],
+          "explanation": "Joe Navarro: 'Freeze es la primera respuesta del sistema límbico ante amenaza. Evolucionamos para congelarnos cuando los depredadores detectan movimiento. La inmovilidad repentina es una de las señales más honestas de miedo o amenaza percibida.'"
+        },
+        {
+          "id": "bl_020_q2",
+          "question": "¿Qué revela esto sobre el nombre mencionado?",
+          "type": "emotional_state",
+          "correct_answer": "La persona asocia ese nombre con amenaza o consecuencias negativas",
+          "options": [
+            "Nada - coincidencia temporal",
+            "La persona asocia ese nombre con amenaza o consecuencias negativas",
+            "La persona tiene buena relación con esa persona",
+            "Simple pérdida de concentración"
+          ],
+          "explanation": "La respuesta freeze es automática e involuntaria. Si un nombre específico la dispara, revela que ese nombre está asociado neurológicamente con amenaza, miedo o consecuencias negativas graves."
+        }
+      ],
+      "theory_tags": ["freeze_response", "limbic_reactions", "threat_detection", "autonomic_signals"],
+      "references": ["Navarro, Joe - What Every Body is Saying", "Navarro, Joe - Dangerous Personalities"]
+    },
+    {
+      "id": "bl_021",
+      "skill": "body_language",
+      "level": 5,
+      "type": "video",
+      "media_url": "/placeholders/bl_021.mp4",
+      "title": "Microdinámicas de Poder: Quién Habla Primero",
+      "description": "Reunión de alto nivel: silencio incómodo hasta que persona junior habla primero",
+      "baseline_context": "Silencio de 8 segundos. Personas senior esperan. Junior rompe el silencio.",
+      "baseline_duration_sec": 0,
+      "deviation_timestamp_sec": 8,
+      "category": "incomodidad",
+      "difficulty": "expert",
+      "questions": [
+        {
+          "id": "bl_021_q1",
+          "question": "¿Por qué hablar primero después del silencio indica menos poder?",
+          "type": "power_dynamic",
+          "correct_answer": "Tolerancia al silencio indica confianza; romperlo indica ansiedad",
+          "options": [
+            "Hablar primero siempre es señal de liderazgo",
+            "Tolerancia al silencio indica confianza; romperlo indica ansiedad",
+            "No tiene relación con poder",
+            "Es señal de respeto hacia los senior"
+          ],
+          "explanation": "Robert Greene / 48 Laws of Power: 'El que habla primero en un silencio incómodo revela incomodidad con el vacío y necesidad de llenar el espacio. Las personas con alto estatus toleran silencios largos sin ansiedad, forzando a otros a romperlos.'"
+        },
+        {
+          "id": "bl_021_q2",
+          "question": "¿Qué señales no-verbales probablemente precedieron al habla?",
+          "type": "power_dynamic",
+          "correct_answer": "Cambios de postura, miradas nerviosas, respiración acelerada",
+          "options": [
+            "Postura relajada y expansiva",
+            "Cambios de postura, miradas nerviosas, respiración acelerada",
+            "Gestos de confianza como steepling",
+            "Ninguna señal previa"
+          ],
+          "explanation": "La incomodidad con el silencio se filtra en comportamiento no-verbal antes de que la persona hable: inquietud, miradas buscando validación, respiración acelerada. Los observadores astutos pueden predecir quién romperá el silencio."
+        }
+      ],
+      "theory_tags": ["silence_tolerance", "status_signals", "discomfort_with_void", "power_plays"],
+      "references": ["Greene, Robert - The 48 Laws of Power", "Cialdini, Robert - Influence"]
+    },
+    {
+      "id": "bl_022",
+      "skill": "body_language",
+      "level": 5,
+      "type": "video",
+      "media_url": "/placeholders/bl_022.mp4",
+      "title": "Microdinámicas de Poder: Interrupciones Toleradas vs Rechazadas",
+      "description": "Persona A interrumpe a B (B se calla). Persona C interrumpe a A (A continúa hablando).",
+      "baseline_context": "Conversación tripartita. Interrupción A→B exitosa. Interrupción C→A fracasa.",
+      "baseline_duration_sec": 0,
+      "deviation_timestamp_sec": 12,
+      "category": "confianza",
+      "difficulty": "expert",
+      "questions": [
+        {
+          "id": "bl_022_q1",
+          "question": "¿Qué jerarquía de poder revela este patrón de interrupciones?",
+          "type": "power_dynamic",
+          "correct_answer": "A > B, A ≥ C (A tiene más poder que B, similar o más que C)",
+          "options": [
+            "B > A > C",
+            "C > A > B",
+            "A > B, A ≥ C (A tiene más poder que B, similar o más que C)",
+            "Todos tienen igual poder"
+          ],
+          "explanation": "La capacidad de interrumpir exitosamente a alguien y la resistencia a ser interrumpido son indicadores precisos de jerarquía social. A domina a B (puede interrumpirlo) pero resiste interrupción de C (estatus similar o A superior)."
+        },
+        {
+          "id": "bl_022_q2",
+          "question": "¿Qué haría B para reclamar estatus igual a A?",
+          "type": "power_dynamic",
+          "correct_answer": "Continuar hablando la próxima vez que A intente interrumpir",
+          "options": [
+            "Interrumpir más fuerte y frecuentemente",
+            "Continuar hablando la próxima vez que A intente interrumpir",
+            "Quejarse verbalmente de las interrupciones",
+            "Evitar hablar cuando A está presente"
+          ],
+          "explanation": "Las jerarquías se negocian en microinteracciones. Para igualar estatus con alguien que te interrumpe, debes resistir la interrupción continuando tu discurso. Ceder cada vez refuerza la jerarquía; resistir la desafía."
+        }
+      ],
+      "theory_tags": ["interruption_patterns", "conversational_dominance", "status_negotiation", "power_microinteractions"],
+      "references": ["Tannen, Deborah - You Just Don't Understand", "Leary, Mark - The Curse of the Self"]
+    },
+    {
+      "id": "bl_023",
+      "skill": "body_language",
+      "level": 5,
+      "type": "video",
+      "media_url": "/placeholders/bl_023.mp4",
+      "title": "Detección de Cluster Contradictorio",
+      "description": "Persona con postura confiada (expansiva, steepling) pero pies inquietos y parpadeo frecuente",
+      "baseline_context": "Señales superiores (torso, manos, cara) = confianza. Señales inferiores (pies, parpadeo) = ansiedad.",
+      "baseline_duration_sec": 0,
+      "deviation_timestamp_sec": 5,
+      "category": "mentira",
+      "difficulty": "expert",
+      "questions": [
+        {
+          "id": "bl_023_q1",
+          "question": "¿Qué parte del cuerpo es más difícil de controlar conscientemente?",
+          "type": "incongruence",
+          "correct_answer": "Pies y piernas - reciben menos atención consciente",
+          "options": [
+            "Cara - es la más expresiva",
+            "Manos - están siempre visibles",
+            "Pies y piernas - reciben menos atención consciente",
+            "Torso - es el centro del cuerpo"
+          ],
+          "explanation": "Joe Navarro: 'Los pies son el indicador más honesto porque les prestamos menos atención consciente. La gente controla su cara y manos pero olvida sus pies, que filtran las emociones reales.'"
+        },
+        {
+          "id": "bl_023_q2",
+          "question": "¿Cuál es el estado emocional REAL de esta persona?",
+          "type": "incongruence",
+          "correct_answer": "Ansiosa pero intentando proyectar confianza",
+          "options": [
+            "Genuinamente confiada",
+            "Ansiosa pero intentando proyectar confianza",
+            "Totalmente relajada",
+            "Imposible determinar"
+          ],
+          "explanation": "Cuando hay contradicción entre señales controladas (cara, manos) y señales menos controladas (pies, parpadeo), confía en las menos controladas. Aquí: confianza falsa (actuada) sobre ansiedad real (filtrada)."
+        }
+      ],
+      "theory_tags": ["contradictory_clusters", "conscious_vs_unconscious_signals", "feet_as_truth_indicators"],
+      "references": ["Navarro, Joe - What Every Body is Saying"]
+    },
+    {
+      "id": "bl_024",
+      "skill": "body_language",
+      "level": 5,
+      "type": "video",
+      "media_url": "/placeholders/bl_024.mp4",
+      "title": "Sutilezas de Desprecio: Micro-Gestos de Superioridad",
+      "description": "Ejecutivo senior escucha propuesta con micro-expresiones sutiles de desprecio (3x en 2 minutos)",
+      "baseline_context": "Cara neutral durante presentación, pero 3 flashes breves (0.1-0.3 seg) de labio superior levantado.",
+      "baseline_duration_sec": 0,
+      "deviation_timestamp_sec": 15,
+      "category": "incomodidad",
+      "difficulty": "expert",
+      "questions": [
+        {
+          "id": "bl_024_q1",
+          "question": "¿Por qué el desprecio es más problemático que el enojo en contextos profesionales?",
+          "type": "emotional_state",
+          "correct_answer": "El desprecio implica superioridad moral, es más corrosivo para la relación",
+          "options": [
+            "El enojo es más problemático - es más intenso",
+            "Son igualmente problemáticos",
+            "El desprecio implica superioridad moral, es más corrosivo para la relación",
+            "Ninguno es problemático en contextos profesionales"
+          ],
+          "explanation": "John Gottman (investigador de relaciones): 'El desprecio es el mejor predictor de ruptura de relaciones porque comunica disgusto + superioridad moral. Te coloca por encima del otro. El enojo puede ser resuelto; el desprecio erosiona respeto.'"
+        },
+        {
+          "id": "bl_024_q2",
+          "question": "¿Qué debería hacer el presentador al detectar estas micro-expresiones?",
+          "type": "emotional_state",
+          "correct_answer": "Cambiar el enfoque - el ejecutivo no está convencido",
+          "options": [
+            "Ignorarlas y continuar con la presentación planeada",
+            "Cambiar el enfoque - el ejecutivo no está convencido",
+            "Confrontar directamente: '¿Tienes dudas sobre esto?'",
+            "Hablar más rápido para terminar pronto"
+          ],
+          "explanation": "Las micro-expresiones de desprecio indican que la propuesta no está resonando. Continuar con el mismo enfoque es desperdiciar tiempo. Un presentador astuto pivot: 'Detecto escepticismo. ¿Qué aspecto te genera más dudas?' - valida la lectura y permite ajustar."
+        }
+      ],
+      "theory_tags": ["contempt_microexpressions", "contempt_vs_anger", "relationship_corrosion", "adaptive_presenting"],
+      "references": ["Ekman, Paul - Emotions Revealed", "Gottman, John - The Seven Principles for Making Marriage Work"]
+    },
+    {
+      "id": "bl_025",
+      "skill": "body_language",
+      "level": 5,
+      "type": "video",
+      "media_url": "/placeholders/bl_025.mp4",
+      "title": "Power Play: Territorio de Asientos",
+      "description": "Nueva persona entra a sala de reuniones, evita conscientemente el asiento 'del jefe'",
+      "baseline_context": "Sala con 8 asientos. Uno es el 'asiento de poder' (cabecera). Todos evitan sentarse allí hasta que el líder llegue.",
+      "baseline_duration_sec": 0,
+      "deviation_timestamp_sec": 8,
+      "category": "incomodidad",
+      "difficulty": "expert",
+      "questions": [
+        {
+          "id": "bl_025_q1",
+          "question": "¿Qué comunica evitar el 'asiento de poder'?",
+          "type": "power_dynamic",
+          "correct_answer": "Reconocimiento de jerarquía y respeto por territorio ajeno",
+          "options": [
+            "Falta de confianza en uno mismo",
+            "Reconocimiento de jerarquía y respeto por territorio ajeno",
+            "Preferencia casual por otros asientos",
+            "Miedo irracional"
+          ],
+          "explanation": "Los espacios físicos adquieren significado simbólico. El 'asiento de poder' es territorio del líder. Evitarlo = reconocer la jerarquía. Sentarse allí sin autoridad = desafío directo que será castigado socialmente."
+        },
+        {
+          "id": "bl_025_q2",
+          "question": "¿Qué pasaría si alguien junior se sentara en el 'asiento del jefe' antes de que llegue?",
+          "type": "power_dynamic",
+          "correct_answer": "Señalaría ignorancia de normas sociales o desafío deliberado - ambos negativos",
+          "options": [
+            "Nada - son solo sillas",
+            "Ganaría respeto por atrevimiento",
+            "Señalaría ignorancia de normas sociales o desafío deliberado - ambos negativos",
+            "El jefe se sentaría en otro lado sin problema"
+          ],
+          "explanation": "Las violaciones territoriales son interpretadas como: 1) Ignorancia social (incompetencia), o 2) Desafío deliberado (insubordinación). Ninguna lectura es favorable. Las jerarquías se refuerzan en micro-decisiones como dónde sentarse."
+        }
+      ],
+      "theory_tags": ["territorial_markers", "symbolic_space", "hierarchy_signaling", "seating_politics"],
+      "references": ["Pease, Allan - The Definitive Book of Body Language", "Goffman, Erving - The Presentation of Self in Everyday Life"]
+    },
+    {
+      "id": "bl_026",
+      "skill": "body_language",
+      "level": 5,
+      "type": "video",
+      "media_url": "/placeholders/bl_026.mp4",
+      "title": "Timing de Adaptadores: Pre vs Post Respuesta",
+      "description": "Persona se toca la cara ANTES de mentir vs DESPUÉS de decir verdad incómoda",
+      "baseline_context": "Pregunta difícil → Adaptador (tocarse cara) → Respuesta = probable mentira. Respuesta → Adaptador = verdad incómoda.",
+      "baseline_duration_sec": 0,
+      "deviation_timestamp_sec": 4,
+      "category": "mentira",
+      "difficulty": "expert",
+      "questions": [
+        {
+          "id": "bl_026_q1",
+          "question": "¿Qué indica un adaptador (tocarse cara) ANTES de la respuesta?",
+          "type": "incongruence",
+          "correct_answer": "Ansiedad anticipatoria - la persona está preparándose para mentir",
+          "options": [
+            "Reflexión profunda sobre la verdad",
+            "Ansiedad anticipatoria - la persona está preparándose para mentir",
+            "Picazón casual sin significado",
+            "Signo de honestidad extrema"
+          ],
+          "explanation": "Aldert Vrij (experto en detección de mentiras): 'Los comportamientos pacificadores PRE-respuesta sugieren ansiedad por lo que están a punto de decir. Si fuera verdad fácil de recordar, no habría ansiedad anticipatoria.'"
+        },
+        {
+          "id": "bl_026_q2",
+          "question": "¿Qué indica un adaptador DESPUÉS de la respuesta?",
+          "type": "incongruence",
+          "correct_answer": "Alivio de haber compartido algo difícil pero verdadero",
+          "options": [
+            "Culpa por haber mentido",
+            "Alivio de haber compartido algo difícil pero verdadero",
+            "Preparación para la siguiente mentira",
+            "Sin significado particular"
+          ],
+          "explanation": "Los adaptadores POST-respuesta suelen indicar liberación de tensión después de decir una verdad incómoda. La ansiedad estaba en revelar información sensible, no en fabricar una mentira."
+        }
+      ],
+      "theory_tags": ["adapter_timing", "anticipatory_anxiety", "post_confession_relief", "deception_timing"],
+      "references": ["Vrij, Aldert - Detecting Lies and Deceit", "Ekman, Paul - Telling Lies"]
+    },
+    {
+      "id": "bl_027",
+      "skill": "body_language",
+      "level": 5,
+      "type": "video",
+      "media_url": "/placeholders/bl_027.mp4",
+      "title": "Autenticidad del Mirroring: Consciente vs Inconsciente",
+      "description": "Persona A copia gestos de B con delay de 2-3 segundos (mirroring falso)",
+      "baseline_context": "Mirroring genuino es simultáneo o con delay <1 seg. Mirroring consciente tiene delay >2 seg.",
+      "baseline_duration_sec": 0,
+      "deviation_timestamp_sec": 8,
+      "category": "incomodidad",
+      "difficulty": "expert",
+      "questions": [
+        {
+          "id": "bl_027_q1",
+          "question": "¿Cómo distinguir mirroring genuino de mirroring manipulativo?",
+          "type": "emotional_state",
+          "correct_answer": "Genuino: simultáneo, sutil, variado. Falso: delayed, obvio, mecánico",
+          "options": [
+            "El genuino es más obvio y exagerado",
+            "Genuino: simultáneo, sutil, variado. Falso: delayed, obvio, mecánico",
+            "No se pueden distinguir",
+            "El falso es más efectivo"
+          ],
+          "explanation": "El mirroring inconsciente (genuino) es automático, instantáneo y sutil. El mirroring consciente (manipulativo, enseñado en cursos de ventas) tiene delay notable porque requiere observar → decidir → ejecutar. Las personas lo detectan intuitivamente."
+        },
+        {
+          "id": "bl_027_q2",
+          "question": "¿Qué riesgo tiene usar mirroring consciente?",
+          "type": "emotional_state",
+          "correct_answer": "Parecer falso y destruir rapport en vez de crearlo",
+          "options": [
+            "Ninguno - siempre funciona",
+            "Parecer falso y destruir rapport en vez de crearlo",
+            "Generar demasiado rapport",
+            "Causar confusión visual"
+          ],
+          "explanation": "Cuando el mirroring es detectado como consciente, la persona se siente manipulada. Chartrand & Bargh: 'El mirroring auténtico genera rapport. El mirroring mecánico genera desconfianza porque revela intención manipulativa.'"
+        }
+      ],
+      "theory_tags": ["authentic_mirroring", "manipulation_detection", "conscious_vs_unconscious_behavior"],
+      "references": ["Chartrand & Bargh - The Chameleon Effect", "Pease, Allan - The Definitive Book of Body Language"]
+    },
+    {
+      "id": "bl_028",
+      "skill": "body_language",
+      "level": 5,
+      "type": "video",
+      "media_url": "/placeholders/bl_028.mp4",
+      "title": "Cascada de Desescalada de Estatus",
+      "description": "Persona de alto estatus hace broma, todos ríen exageradamente excepto uno que sonríe educadamente",
+      "baseline_context": "Jefe hace chiste mediocre. 7 personas ríen fuerte. 1 persona sonríe cortésmente sin reír.",
+      "baseline_duration_sec": 0,
+      "deviation_timestamp_sec": 5,
+      "category": "incomodidad",
+      "difficulty": "expert",
+      "questions": [
+        {
+          "id": "bl_028_q1",
+          "question": "¿Qué revela la risa exagerada del grupo?",
+          "type": "power_dynamic",
+          "correct_answer": "Comportamiento de apaciguamiento hacia persona de alto estatus",
+          "options": [
+            "El chiste fue genuinamente muy gracioso",
+            "Comportamiento de apaciguamiento hacia persona de alto estatus",
+            "Todos tienen el mismo sentido del humor",
+            "Alegría espontánea del grupo"
+          ],
+          "explanation": "Robin Dunbar (antropólogo): 'La risa es más social que emocional. Reímos para señalar pertenencia al grupo y deferencia a líderes. La risa exagerada a chistes mediocres del jefe es comportamiento político, no emocional.'"
+        },
+        {
+          "id": "bl_028_q2",
+          "question": "¿Qué implica NO reír exageradamente (solo sonrisa educada)?",
+          "type": "power_dynamic",
+          "correct_answer": "Estatus alto propio O falta de miedo a consecuencias",
+          "options": [
+            "Falta de sentido del humor",
+            "Estatus alto propio O falta de miedo a consecuencias",
+            "Desinterés por el trabajo",
+            "Sordera parcial"
+          ],
+          "explanation": "No participar en la risa grupal de apaciguamiento señala: 1) Estatus suficientemente alto para no necesitar apaciguar, 2) Confianza en que no habrá represalias, o 3) Disposición a aceptar consecuencias. Las tres indican bajo miedo al poder del jefe."
+        }
+      ],
+      "theory_tags": ["social_laughter", "appeasement_behavior", "status_signaling_via_laughter", "conformity_pressure"],
+      "references": ["Dunbar, Robin - Grooming, Gossip and the Evolution of Language", "Cialdini, Robert - Influence"]
+    },
+    {
+      "id": "bl_029",
+      "skill": "body_language",
+      "level": 5,
+      "type": "image",
+      "media_url": "/placeholders/bl_029.jpg",
+      "title": "Asimetría Postural Sutil: Indicador de Incongruencia",
+      "description": "Ejecutivo con torso inclinado hacia adelante (interés) pero pierna cruzada alejándose (retiro)",
+      "baseline_context": "Señales corporales divididas: parte superior = acercamiento, parte inferior = retiro.",
+      "category": "mentira",
+      "difficulty": "expert",
+      "questions": [
+        {
+          "id": "bl_029_q1",
+          "question": "¿Qué conflicto interno revela esta asimetría postural?",
+          "type": "incongruence",
+          "correct_answer": "Interés consciente pero incomodidad o rechazo subconsciente",
+          "options": [
+            "Postura perfectamente congruente",
+            "Interés consciente pero incomodidad o rechazo subconsciente",
+            "Problema físico de espalda",
+            "Estilo de sentarse personal sin significado"
+          ],
+          "explanation": "Las asimetrías posturales (mitad del cuerpo hacia, mitad alejándose) revelan conflicto entre deseos conscientes e inconscientes. Torso adelante = 'debo mostrar interés'. Piernas alejándose = 'realmente quiero escapar'.'"
+        }
+      ],
+      "theory_tags": ["postural_asymmetry", "internal_conflict", "approach_avoidance", "body_part_independence"],
+      "references": ["Navarro, Joe - The Dictionary of Body Language"]
+    },
+    {
+      "id": "bl_030",
+      "skill": "body_language",
+      "level": 5,
+      "type": "video",
+      "media_url": "/placeholders/bl_030.mp4",
+      "title": "Ventana de Autenticidad: Primera Reacción vs Corrección",
+      "description": "Persona recibe noticia, primera reacción (0.3 seg) = disgusto, luego sonrisa controlada",
+      "baseline_context": "Primera reacción (micro-momento) revela emoción genuina antes de control consciente.",
+      "baseline_duration_sec": 0,
+      "deviation_timestamp_sec": 1,
+      "category": "mentira",
+      "difficulty": "expert",
+      "questions": [
+        {
+          "id": "bl_030_q1",
+          "question": "¿Cuál emoción es la genuina?",
+          "type": "incongruence",
+          "correct_answer": "La primera (disgusto) - es automática antes del control consciente",
+          "options": [
+            "La segunda (sonrisa) - es más duradera",
+            "Ambas son igualmente genuinas",
+            "La primera (disgusto) - es automática antes del control consciente",
+            "Ninguna es genuina"
+          ],
+          "explanation": "Paul Ekman: 'La primera fracción de segundo revela la emoción genuina. Luego viene el control consciente que aplica la 'máscara social'. La ventana de autenticidad es extremadamente breve: 0.1-0.5 segundos.'"
+        },
+        {
+          "id": "bl_030_q2",
+          "question": "¿Por qué la persona genera la sonrisa controlada después?",
+          "type": "incongruence",
+          "correct_answer": "Display rules - reglas sociales de emoción apropiada",
+          "options": [
+            "La emoción genuina cambió instantáneamente",
+            "Display rules - reglas sociales de emoción apropiada",
+            "Trastorno de personalidad múltiple",
+            "Error de percepción del observador"
+          ],
+          "explanation": "Ekman: 'Display rules son normas culturales sobre qué emociones mostrar en qué contextos. Todos aprendemos a suprimir emociones genuinas y mostrar las socialmente apropiadas. Pero la primera reacción filtra la verdad antes de que las display rules actúen.'"
+        }
+      ],
+      "theory_tags": ["authenticity_window", "microexpressions", "display_rules", "emotion_regulation", "first_response"],
+      "references": ["Ekman, Paul - Emotions Revealed", "Ekman, Paul - Telling Lies"]
+    },
+    {
+      "id": "bl_031",
+      "skill": "body_language",
+      "level": 3,
+      "type": "video",
+      "media_url": "/placeholders/bl_031.mp4",
+      "title": "Proxémica Cultural: Distancias Apropiadas",
+      "description": "Encuentro entre persona de cultura de contacto alto vs bajo contacto",
+      "baseline_context": "Culturas mediterráneas/latinas: 0.4-0.7m. Culturas nórdicas/asiáticas: 0.9-1.2m.",
+      "category": "incomodidad",
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "bl_031_q1",
+          "question": "¿Qué sucede cuando dos personas de culturas proxémicas diferentes interactúan?",
+          "type": "emotional_state",
+          "correct_answer": "'Danza' constante - uno avanza, otro retrocede",
+          "options": [
+            "Ambos se adaptan instantáneamente",
+            "'Danza' constante - uno avanza, otro retrocede",
+            "Se mantienen en punto medio cómodo",
+            "No afecta la interacción"
+          ],
+          "explanation": "Edward T. Hall: 'En encuentros interculturales, la persona de cultura de alto contacto busca su distancia cómoda (acercándose), mientras la de bajo contacto busca la suya (alejándose), creando una danza inconsciente que puede durar toda la conversación.'"
+        }
+      ],
+      "theory_tags": ["proxemics", "cultural_differences", "contact_cultures", "personal_space"],
+      "references": ["Hall, Edward T. - The Hidden Dimension"]
+    },
+    {
+      "id": "bl_032",
+      "skill": "body_language",
+      "level": 2,
+      "type": "image",
+      "media_url": "/placeholders/bl_032.jpg",
+      "title": "Ventilación del Cuello - Estrés Térmico Emocional",
+      "description": "Persona afloja corbata o cuello de camisa durante conversación tensa",
+      "baseline_context": null,
+      "category": "estrés",
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "bl_032_q1",
+          "question": "¿Qué indica el gesto de ventilar el cuello?",
+          "type": "emotional_state",
+          "correct_answer": "Estrés - la temperatura corporal aumenta con ansiedad",
+          "options": [
+            "Calor ambiental solamente",
+            "Estrés - la temperatura corporal aumenta con ansiedad",
+            "Comodidad y relajación",
+            "Vanidad personal"
+          ],
+          "explanation": "Navarro: 'Cuando experimentamos estrés, la temperatura corporal aumenta (preparación fight-or-flight). Ventilar el cuello es un comportamiento termorregulador que también es pacificador. Es señal confiable de incomodidad.'"
+        }
+      ],
+      "theory_tags": ["neck_ventilation", "thermoregulation", "stress_indicators", "pacifying_behaviors"],
+      "references": ["Navarro, Joe - What Every Body is Saying"]
+    },
+    {
+      "id": "bl_033",
+      "skill": "body_language",
+      "level": 1,
+      "type": "video",
+      "media_url": "/placeholders/bl_033.mp4",
+      "title": "Contacto Visual: Regla del 60-70%",
+      "description": "Comparación de patrones de contacto visual: normal, evitativo, intimidante",
+      "baseline_context": "Normal: 60-70% del tiempo. Evitativo: <40%. Intimidante/dominante: >80%.",
+      "category": "neutral",
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "bl_033_q1",
+          "question": "¿Qué porcentaje de contacto visual es normal y saludable?",
+          "type": "emotional_state",
+          "correct_answer": "60-70% del tiempo durante conversación",
+          "options": [
+            "100% - siempre mirar a los ojos",
+            "60-70% del tiempo durante conversación",
+            "30-40% - mirar poco",
+            "No importa el porcentaje"
+          ],
+          "explanation": "Investigación muestra que 60-70% de contacto visual durante conversación es óptimo. 100% es intimidante. <40% sugiere desinterés, ansiedad o deshonestidad. Necesitamos breaks para procesar información.'"
+        }
+      ],
+      "theory_tags": ["eye_contact", "conversation_norms", "gaze_patterns"],
+      "references": ["Argyle, Michael - Bodily Communication"]
+    },
+    {
+      "id": "bl_034",
+      "skill": "body_language",
+      "level": 4,
+      "type": "video",
+      "media_url": "/placeholders/bl_034.mp4",
+      "title": "Emblemas Culturales: OK Sign",
+      "description": "Mismo gesto (OK con dedos) en diferentes culturas: USA vs Brasil vs Turquía",
+      "baseline_context": "USA: OK/aprobación. Brasil: insulto grave. Turquía: referencia homosexual ofensiva.",
+      "category": "neutral",
+      "difficulty": "very_hard",
+      "questions": [
+        {
+          "id": "bl_034_q1",
+          "question": "¿Qué son los emblemas y por qué varían culturalmente?",
+          "type": "emotional_state",
+          "correct_answer": "Gestos con significados específicos aprendidos culturalmente",
+          "options": [
+            "Gestos universales innatos",
+            "Gestos con significados específicos aprendidos culturalmente",
+            "Señales de dominancia biológicas",
+            "Tics nerviosos comunes"
+          ],
+          "explanation": "Ekman: 'Los emblemas son gestos con traducciones verbales específicas que varían por cultura. A diferencia de expresiones emocionales (universales), los emblemas se aprenden. El mismo gesto puede significar cosas opuestas en culturas diferentes.'"
+        }
+      ],
+      "theory_tags": ["emblems", "cultural_variation", "learned_gestures", "cross_cultural_communication"],
+      "references": ["Ekman, Paul - Emotions Revealed", "Morris, Desmond - Manwatching"]
+    },
+    {
+      "id": "bl_035",
+      "skill": "body_language",
+      "level": 2,
+      "type": "video",
+      "media_url": "/placeholders/bl_035.mp4",
+      "title": "Agrupamiento Territorial en Grupos",
+      "description": "Fiesta/networking: personas forman círculos cerrados vs círculos abiertos",
+      "baseline_context": "Círculo cerrado: hombros juntos, sin espacios. Círculo abierto: gaps visibles, orientación que permite entrada.",
+      "category": "incomodidad",
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "bl_035_q1",
+          "question": "¿Qué comunica un círculo de conversación completamente cerrado?",
+          "type": "emotional_state",
+          "correct_answer": "'No se aceptan intrusiones' - conversación privada",
+          "options": [
+            "Invitación abierta a unirse",
+            "'No se aceptan intrusiones' - conversación privada",
+            "Falta de habilidades sociales",
+            "Ningún significado particular"
+          ],
+          "explanation": "Allan Pease: 'Los grupos usan el lenguaje corporal para marcar territorio conversacional. Círculos cerrados (sin gaps) señalan privacidad. Círculos abiertos (con espacios) invitan a nuevos miembros. Es una negociación sutil de fronteras sociales.'"
+        },
+        {
+          "id": "bl_035_q2",
+          "question": "¿Cómo debe acercarse alguien a un círculo si quiere unirse?",
+          "type": "emotional_state",
+          "correct_answer": "Esperar en la periferia hasta que alguien abra el círculo",
+          "options": [
+            "Irrumpir directamente en el centro",
+            "Esperar en la periferia hasta que alguien abra el círculo",
+            "Interrumpir verbalmente primero",
+            "Nunca intentar unirse a círculos formados"
+          ],
+          "explanation": "El protocolo social es posicionarse cerca (mostrando interés) y esperar a que alguien del grupo gire su cuerpo creando un gap. Eso es la invitación no-verbal. Irrumpir sin invitación es violación social.'"
+        }
+      ],
+      "theory_tags": ["territorial_grouping", "conversation_circles", "social_inclusion_signals", "spatial_negotiation"],
+      "references": ["Pease, Allan - The Definitive Book of Body Language", "Goffman, Erving - Behavior in Public Places"]
+    }
+  ]
+}
