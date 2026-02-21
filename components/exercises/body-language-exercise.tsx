@@ -462,7 +462,7 @@ export function BodyLanguageExercise({ level, onComplete }: BodyLanguageExercise
                 {currentQuestion.options.map((option, idx) => (
                   <Button
                     key={idx}
-                    variant={selectedAnswer === option ? 'default' : 'outline'}
+                    variant='primary' : 'outline'}
                     onClick={() => handleAnswerSelect(option)}
                     className="justify-start text-left h-auto py-3 px-4"
                   >
